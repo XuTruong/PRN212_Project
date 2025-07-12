@@ -24,10 +24,12 @@
 
         <!-- Password -->
         <Label Grid.Row="1" Grid.Column="0" Content="Password:" VerticalAlignment="Center"/>
-        <PasswordBox x:Name="txtPassword" Grid.Row="1" Grid.Column="1" Margin="5"/>
+        <PasswordBox x:Name="txtPassword" Grid.Row="1" Grid.Column="1" Margin="5" Visibility="Visible"/>
+        <TextBox x:Name="txtPasswordVisible" Grid.Row="1" Grid.Column="1" Margin="5" Visibility="Collapsed"/>
 
-        <CheckBox x:Name="chkShowPassword" Grid.Row="2" Grid.Column="1" Content="Hiện mật khẩu" 
-          Margin="5" VerticalAlignment="Center"/>
+        <CheckBox x:Name="chkShowPassword" Grid.Row="2" Grid.Column="1" Content="Show password" 
+          Margin="5" VerticalAlignment="Center" Checked="chkShowPassword_Checked" 
+              Unchecked="chkShowPassword_Unchecked"/>
 
 
         <Button Grid.Column="1" Content="Login" HorizontalAlignment="Left" Margin="46,31,0,45" Grid.Row="3" Width="84" Click="Button_Click"/>

@@ -8,5 +8,8 @@
     <Compile Update="RoomManager.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="TenantManager.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

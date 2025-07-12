@@ -19,6 +19,8 @@ public partial class Tenant
 
     public string? Address { get; set; }
 
+    public bool? IsActive { get; set; }
+
     public virtual ICollection<Contract> Contracts { get; set; } = new List<Contract>();
 
     public virtual ICollection<RoomTenant> RoomTenants { get; set; } = new List<RoomTenant>();

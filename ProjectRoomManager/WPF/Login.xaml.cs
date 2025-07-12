@@ -56,5 +56,21 @@ namespace WPF
                 MessageBox.Show("Invalid username or password.", "Login Failed", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
+
+        private void chkShowPassword_Checked(object sender, RoutedEventArgs e)
+        {
+            txtPasswordVisible.Text = txtPassword.Password;
+            txtPasswordVisible.Visibility = Visibility.Visible;
+            txtPassword.Visibility = Visibility.Collapsed;
+        }
+
+        private void chkShowPassword_Unchecked(object sender, RoutedEventArgs e)
+        {
+            txtPassword.Password = txtPasswordVisible.Text;
+            txtPassword.Visibility = Visibility.Visible;
+            txtPasswordVisible.Visibility = Visibility.Collapsed;
+        }
+
+
     }
 }

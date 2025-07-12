@@ -29,7 +29,8 @@ namespace WPF
 
         private void Tenant_Click(object sender, RoutedEventArgs e)
         {
-            
+            var tenantWindow = new TenantManager();
+            tenantWindow.ShowDialog();
         }
 
         private void Contract_Click(object sender, RoutedEventArgs e)

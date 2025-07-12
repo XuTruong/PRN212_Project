@@ -84,3 +84,5 @@ C:\PRN212_Project\ProjectRoomManager\WPF\obj\Debug\net8.0-windows\WPF.genruntime
 C:\PRN212_Project\ProjectRoomManager\WPF\obj\Debug\net8.0-windows\ref\WPF.dll
 C:\PRN212_Project\ProjectRoomManager\WPF\obj\Debug\net8.0-windows\RoomManager.g.cs
 C:\PRN212_Project\ProjectRoomManager\WPF\obj\Debug\net8.0-windows\RoomManager.baml
+C:\PRN212_Project\ProjectRoomManager\WPF\obj\Debug\net8.0-windows\TenantManager.baml
+C:\PRN212_Project\ProjectRoomManager\WPF\obj\Debug\net8.0-windows\TenantManager.g.cs
