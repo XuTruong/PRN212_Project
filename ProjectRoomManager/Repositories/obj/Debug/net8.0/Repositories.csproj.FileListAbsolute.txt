@@ -1,0 +1,17 @@
+C:\PRN212_Project\ProjectRoomManager\Repositories\bin\Debug\net8.0\appsettings.json
+C:\PRN212_Project\ProjectRoomManager\Repositories\bin\Debug\net8.0\Repositories.deps.json
+C:\PRN212_Project\ProjectRoomManager\Repositories\bin\Debug\net8.0\Repositories.dll
+C:\PRN212_Project\ProjectRoomManager\Repositories\bin\Debug\net8.0\Repositories.pdb
+C:\PRN212_Project\ProjectRoomManager\Repositories\bin\Debug\net8.0\DataAccess.dll
+C:\PRN212_Project\ProjectRoomManager\Repositories\bin\Debug\net8.0\DataAccess.pdb
+C:\PRN212_Project\ProjectRoomManager\Repositories\obj\Debug\net8.0\Repositories.csproj.AssemblyReference.cache
+C:\PRN212_Project\ProjectRoomManager\Repositories\obj\Debug\net8.0\Repositories.GeneratedMSBuildEditorConfig.editorconfig
+C:\PRN212_Project\ProjectRoomManager\Repositories\obj\Debug\net8.0\Repositories.AssemblyInfoInputs.cache
+C:\PRN212_Project\ProjectRoomManager\Repositories\obj\Debug\net8.0\Repositories.AssemblyInfo.cs
+C:\PRN212_Project\ProjectRoomManager\Repositories\obj\Debug\net8.0\Repositories.csproj.CoreCompileInputs.cache
+C:\PRN212_Project\ProjectRoomManager\Repositories\obj\Debug\net8.0\Repositories.sourcelink.json
+C:\PRN212_Project\ProjectRoomManager\Repositories\obj\Debug\net8.0\Reposito.787EC4B2.Up2Date
+C:\PRN212_Project\ProjectRoomManager\Repositories\obj\Debug\net8.0\Repositories.dll
+C:\PRN212_Project\ProjectRoomManager\Repositories\obj\Debug\net8.0\refint\Repositories.dll
+C:\PRN212_Project\ProjectRoomManager\Repositories\obj\Debug\net8.0\Repositories.pdb
+C:\PRN212_Project\ProjectRoomManager\Repositories\obj\Debug\net8.0\ref\Repositories.dll

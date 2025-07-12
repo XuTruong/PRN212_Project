@@ -20,5 +20,37 @@ namespace WPF
         {
             InitializeComponent();
         }
+
+        private void Room_Click(object sender, RoutedEventArgs e)
+        {
+            var roomWindow = new RoomManager();
+            roomWindow.ShowDialog();
+        }
+
+        private void Tenant_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void Contract_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void Invoice_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void Payment_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void Reports_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
     }
 }

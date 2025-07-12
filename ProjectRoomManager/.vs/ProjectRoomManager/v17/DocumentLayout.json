@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\PRN212_Project\\ProjectRoomManager\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C9466794-7EB2-453A-BDED-B5DBD4D31BF4}|DataAccess\\DataAccess.csproj|c:\\prn212_project\\projectroommanager\\dataaccess\\dataaccess.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{C9466794-7EB2-453A-BDED-B5DBD4D31BF4}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\dataaccess.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|c:\\prn212_project\\projectroommanager\\wpf\\roommanager.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|solutionrelative:wpf\\roommanager.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|c:\\prn212_project\\projectroommanager\\wpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -13,6 +13,62 @@
     {
       "AbsoluteMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|c:\\prn212_project\\projectroommanager\\wpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|solutionrelative:wpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|c:\\prn212_project\\projectroommanager\\wpf\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|solutionrelative:wpf\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|c:\\prn212_project\\projectroommanager\\wpf\\roommanager.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|solutionrelative:wpf\\roommanager.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{111A353B-9A12-49D7-AFF4-6B2F6ADF383B}|Services\\Services.csproj|c:\\prn212_project\\projectroommanager\\services\\roomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{111A353B-9A12-49D7-AFF4-6B2F6ADF383B}|Services\\Services.csproj|solutionrelative:services\\roomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01843BF5-E2C7-478B-9907-FB45C4B8BB53}|Repositories\\Repositories.csproj|c:\\prn212_project\\projectroommanager\\repositories\\roomrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01843BF5-E2C7-478B-9907-FB45C4B8BB53}|Repositories\\Repositories.csproj|solutionrelative:repositories\\roomrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9466794-7EB2-453A-BDED-B5DBD4D31BF4}|DataAccess\\DataAccess.csproj|c:\\prn212_project\\projectroommanager\\dataaccess\\models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9466794-7EB2-453A-BDED-B5DBD4D31BF4}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\models\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{111A353B-9A12-49D7-AFF4-6B2F6ADF383B}|Services\\Services.csproj|c:\\prn212_project\\projectroommanager\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{111A353B-9A12-49D7-AFF4-6B2F6ADF383B}|Services\\Services.csproj|solutionrelative:services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|c:\\prn212_project\\projectroommanager\\wpf\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|solutionrelative:wpf\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|c:\\prn212_project\\projectroommanager\\wpf\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|solutionrelative:wpf\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|c:\\prn212_project\\projectroommanager\\wpf\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|solutionrelative:wpf\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01843BF5-E2C7-478B-9907-FB45C4B8BB53}|Repositories\\Repositories.csproj|c:\\prn212_project\\projectroommanager\\repositories\\accountrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01843BF5-E2C7-478B-9907-FB45C4B8BB53}|Repositories\\Repositories.csproj|solutionrelative:repositories\\accountrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01843BF5-E2C7-478B-9907-FB45C4B8BB53}|Repositories\\Repositories.csproj|c:\\prn212_project\\projectroommanager\\repositories\\dto\\accountdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01843BF5-E2C7-478B-9907-FB45C4B8BB53}|Repositories\\Repositories.csproj|solutionrelative:repositories\\dto\\accountdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9466794-7EB2-453A-BDED-B5DBD4D31BF4}|DataAccess\\DataAccess.csproj|c:\\prn212_project\\projectroommanager\\dataaccess\\models\\roommanagercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9466794-7EB2-453A-BDED-B5DBD4D31BF4}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\models\\roommanagercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9466794-7EB2-453A-BDED-B5DBD4D31BF4}|DataAccess\\DataAccess.csproj|c:\\prn212_project\\projectroommanager\\dataaccess\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C9466794-7EB2-453A-BDED-B5DBD4D31BF4}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9466794-7EB2-453A-BDED-B5DBD4D31BF4}|DataAccess\\DataAccess.csproj|c:\\prn212_project\\projectroommanager\\dataaccess\\dataaccess.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C9466794-7EB2-453A-BDED-B5DBD4D31BF4}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\dataaccess.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,21 +78,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 13,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DataAccess",
-              "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\DataAccess\\DataAccess.csproj",
-              "RelativeDocumentMoniker": "DataAccess\\DataAccess.csproj",
-              "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\DataAccess\\DataAccess.csproj",
-              "RelativeToolTip": "DataAccess\\DataAccess.csproj",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-07-09T04:10:12.781Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -87,6 +130,31 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RoomManager.xaml.cs",
+              "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\RoomManager.xaml.cs",
+              "RelativeDocumentMoniker": "WPF\\RoomManager.xaml.cs",
+              "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\RoomManager.xaml.cs",
+              "RelativeToolTip": "WPF\\RoomManager.xaml.cs",
+              "ViewState": "AgIAAIIAAAAAAAAAAAAwwJYAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-12T06:41:17.299Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RoomManager.xaml",
+              "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\RoomManager.xaml",
+              "RelativeDocumentMoniker": "WPF\\RoomManager.xaml",
+              "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\RoomManager.xaml",
+              "RelativeToolTip": "WPF\\RoomManager.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-12T06:32:57.79Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\MainWindow.xaml",
@@ -99,15 +167,186 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\App.xaml",
+              "RelativeDocumentMoniker": "WPF\\App.xaml",
+              "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\App.xaml",
+              "RelativeToolTip": "WPF\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-12T05:50:01.489Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "WPF\\MainWindow.xaml.cs",
               "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\MainWindow.xaml.cs",
               "RelativeToolTip": "WPF\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAiwDMAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-09T04:10:06.269Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RoomService.cs",
+              "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\Services\\RoomService.cs",
+              "RelativeDocumentMoniker": "Services\\RoomService.cs",
+              "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\Services\\RoomService.cs",
+              "RelativeToolTip": "Services\\RoomService.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAACwAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-12T06:50:29.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RoomRepo.cs",
+              "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\Repositories\\RoomRepo.cs",
+              "RelativeDocumentMoniker": "Repositories\\RoomRepo.cs",
+              "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\Repositories\\RoomRepo.cs",
+              "RelativeToolTip": "Repositories\\RoomRepo.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAAwCkAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-12T05:28:21.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AccountService.cs",
+              "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\Services\\AccountService.cs",
+              "RelativeDocumentMoniker": "Services\\AccountService.cs",
+              "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\Services\\AccountService.cs",
+              "RelativeToolTip": "Services\\AccountService.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-12T05:57:23.838Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Room.cs",
+              "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\DataAccess\\Models\\Room.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Models\\Room.cs",
+              "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\DataAccess\\Models\\Room.cs",
+              "RelativeToolTip": "DataAccess\\Models\\Room.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA+wAsAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-12T05:30:55.894Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Login.xaml",
+              "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\Login.xaml",
+              "RelativeDocumentMoniker": "WPF\\Login.xaml",
+              "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\Login.xaml",
+              "RelativeToolTip": "WPF\\Login.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-12T05:49:44.447Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Login.xaml.cs",
+              "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\Login.xaml.cs",
+              "RelativeDocumentMoniker": "WPF\\Login.xaml.cs",
+              "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\Login.xaml.cs",
+              "RelativeToolTip": "WPF\\Login.xaml.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAcwDMAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-12T05:50:09.63Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "WPF\\AssemblyInfo.cs",
+              "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\AssemblyInfo.cs",
+              "RelativeToolTip": "WPF\\AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-12T06:16:00.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AccountDTO.cs",
+              "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\Repositories\\DTO\\AccountDTO.cs",
+              "RelativeDocumentMoniker": "Repositories\\DTO\\AccountDTO.cs",
+              "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\Repositories\\DTO\\AccountDTO.cs",
+              "RelativeToolTip": "Repositories\\DTO\\AccountDTO.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBAAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-12T05:16:42.934Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AccountRepo.cs",
+              "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\Repositories\\AccountRepo.cs",
+              "RelativeDocumentMoniker": "Repositories\\AccountRepo.cs",
+              "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\Repositories\\AccountRepo.cs",
+              "RelativeToolTip": "Repositories\\AccountRepo.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwCAAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-12T05:12:01Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "RoomManagerContext.cs",
+              "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\DataAccess\\Models\\RoomManagerContext.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Models\\RoomManagerContext.cs",
+              "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\DataAccess\\Models\\RoomManagerContext.cs",
+              "RelativeToolTip": "DataAccess\\Models\\RoomManagerContext.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAA5wCMAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-12T05:04:25.991Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\DataAccess\\appsettings.json",
+              "RelativeDocumentMoniker": "DataAccess\\appsettings.json",
+              "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\DataAccess\\appsettings.json",
+              "RelativeToolTip": "DataAccess\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-12T05:03:36.92Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:12:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DataAccess.csproj",
+              "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\DataAccess\\DataAccess.csproj",
+              "RelativeDocumentMoniker": "DataAccess\\DataAccess.csproj",
+              "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\DataAccess\\DataAccess.csproj",
+              "RelativeToolTip": "DataAccess\\DataAccess.csproj",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-09T04:10:12.781Z",
               "EditorCaption": ""
             }
           ]
