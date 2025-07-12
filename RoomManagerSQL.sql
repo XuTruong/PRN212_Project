@@ -24,7 +24,8 @@ CREATE TABLE Tenant (
     PhoneNumber NVARCHAR(15),
     IdNumber NVARCHAR(20),
     Dob DATE,
-    Address NVARCHAR(255)
+    Address NVARCHAR(255),
+	IsActive BIT DEFAULT 1
 );
 
 CREATE TABLE Contract (
