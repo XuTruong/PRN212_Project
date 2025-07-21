@@ -52,5 +52,11 @@
         <!-- Nút lưu thanh toán -->
         <Button Content="💾 Lưu Thanh Toán" Height="40" VerticalAlignment="Bottom"
                 Click="SavePayments_Click" Grid.ColumnSpan="3"/>
+
+        <Button Content="📤 Xuất Excel" Height="35" Width="100"
+        Click="ExportToExcel_Click"
+        HorizontalAlignment="Right"
+        VerticalAlignment="Bottom"
+        Margin="0,0,43,65" Grid.Column="2"/>
     </Grid>
-</Window>
+</Window>

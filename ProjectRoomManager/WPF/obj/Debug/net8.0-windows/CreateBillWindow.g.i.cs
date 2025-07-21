@@ -117,7 +117,7 @@ namespace WPF {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/WPF;component/createbillwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/WPF;V1.0.0.0;component/createbillwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\CreateBillWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

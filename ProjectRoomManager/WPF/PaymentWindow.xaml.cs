@@ -1,7 +1,9 @@
 ﻿using System.Collections.ObjectModel;
 using System.Windows;
 using System.Windows.Controls;
+using ClosedXML.Excel;
 using DataAccess.Models;
+using Microsoft.Win32;
 using Repositories.DTO;
 
 namespace WPF
@@ -59,6 +61,7 @@ namespace WPF
                     PaymentDate = DateTime.Now,
                     Note = "",
                     IsSelected = false
+
                 }
             );
 
@@ -130,6 +133,43 @@ namespace WPF
             );
 
             dgPayments.ItemsSource = PaymentItems;
+        }
+
+        private void ExportToExcel_Click(object sender, RoutedEventArgs e)
+        {
+            var workbook = new XLWorkbook();
+            var worksheet = workbook.Worksheets.Add("ThanhToan");
+
+            // Header
+            worksheet.Cell(1, 1).Value = "Phòng";
+            worksheet.Cell(1, 2).Value = "Số tiền";
+            worksheet.Cell(1, 3).Value = "Ngày thanh toán";
+            worksheet.Cell(1, 4).Value = "Ghi chú";
+
+            // Data
+            var payments = dgPayments.ItemsSource as IEnumerable<dynamic>; // hoặc thay bằng kiểu của bạn
+            int row = 2;
+            foreach (var payment in payments)
+            {
+                worksheet.Cell(row, 1).Value = payment.RoomName;
+                worksheet.Cell(row, 2).Value = payment.Amount;
+                worksheet.Cell(row, 3).Value = payment.PaymentDate?.ToString("dd/MM/yyyy");
+                worksheet.Cell(row, 4).Value = payment.Note;
+                row++;
+            }
+
+            // Lưu file
+            SaveFileDialog saveDialog = new SaveFileDialog
+            {
+                Filter = "Excel Workbook|*.xlsx",
+                FileName = "BaoCaoThanhToan.xlsx"
+            };
+
+            if (saveDialog.ShowDialog() == true)
+            {
+                workbook.SaveAs(saveDialog.FileName);
+                MessageBox.Show("Xuất file Excel thành công!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
         }
     }
 }

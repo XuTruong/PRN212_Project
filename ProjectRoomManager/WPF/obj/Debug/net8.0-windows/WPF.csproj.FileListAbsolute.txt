@@ -100,3 +100,11 @@ C:\PRN212_Project\ProjectRoomManager\WPF\obj\Debug\net8.0-windows\EditBillWindow
 C:\PRN212_Project\ProjectRoomManager\WPF\obj\Debug\net8.0-windows\EditBillWindow.baml
 C:\PRN212_Project\ProjectRoomManager\WPF\obj\Debug\net8.0-windows\PaymentWindow.g.cs
 C:\PRN212_Project\ProjectRoomManager\WPF\obj\Debug\net8.0-windows\PaymentWindow.baml
+C:\PRN212_Project\ProjectRoomManager\WPF\bin\Debug\net8.0-windows\ClosedXML.dll
+C:\PRN212_Project\ProjectRoomManager\WPF\bin\Debug\net8.0-windows\ClosedXML.Parser.dll
+C:\PRN212_Project\ProjectRoomManager\WPF\bin\Debug\net8.0-windows\DocumentFormat.OpenXml.dll
+C:\PRN212_Project\ProjectRoomManager\WPF\bin\Debug\net8.0-windows\DocumentFormat.OpenXml.Framework.dll
+C:\PRN212_Project\ProjectRoomManager\WPF\bin\Debug\net8.0-windows\ExcelNumberFormat.dll
+C:\PRN212_Project\ProjectRoomManager\WPF\bin\Debug\net8.0-windows\RBush.dll
+C:\PRN212_Project\ProjectRoomManager\WPF\bin\Debug\net8.0-windows\SixLabors.Fonts.dll
+C:\PRN212_Project\ProjectRoomManager\WPF\bin\Debug\net8.0-windows\System.IO.Packaging.dll

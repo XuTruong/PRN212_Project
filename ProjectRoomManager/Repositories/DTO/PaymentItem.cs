@@ -8,5 +8,6 @@
         public DateTime PaymentDate { get; set; } = DateTime.Now;
         public string Note { get; set; }
         public bool IsSelected { get; set; }
+        public bool IsPaid { get; set; }
     }
 }
