@@ -1,0 +1,80 @@
+﻿<Window x:Class="WPF.MonthlyBillManager"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF"
+        mc:Ignorable="d"
+        Title="Quản lý Hóa Đơn Hàng Tháng" Height="500" Width="900" WindowStartupLocation="CenterScreen">
+
+    <Grid>
+        <StackPanel Orientation="Horizontal" Margin="10,0,10,10" VerticalAlignment="Top" Height="35">
+            <Label Content="Tháng:" VerticalAlignment="Center"/>
+            <ComboBox x:Name="cbMonth" Width="80" Margin="5,0" Height="26">
+                <!-- Tháng từ 1 đến 12 -->
+                <ComboBoxItem Content="01"/>
+                <ComboBoxItem Content="02"/>
+                <ComboBoxItem Content="03"/>
+                <ComboBoxItem Content="04"/>
+                <ComboBoxItem Content="05"/>
+                <ComboBoxItem Content="06"/>
+                <ComboBoxItem Content="07"/>
+                <ComboBoxItem Content="08"/>
+                <ComboBoxItem Content="09"/>
+                <ComboBoxItem Content="10"/>
+                <ComboBoxItem Content="11"/>
+                <ComboBoxItem Content="12"/>
+            </ComboBox>
+
+            <Label Content="Năm:" VerticalAlignment="Center" Margin="10,0,0,0"/>
+            <ComboBox x:Name="cbYear" Width="100" Margin="5,0" Height="25"/>
+
+            <Button Content="🔍 Xem" Width="80" Click="btnFilterByMonth_Click" Height="25"/>
+        </StackPanel>
+
+        <DataGrid x:Name="dgMonthlyBills"
+                  AutoGenerateColumns="False"
+                  ItemsSource="{Binding MonthlyBills}"
+                  Margin="10,54,10,10"
+                  CanUserAddRows="False"
+                  IsReadOnly="True"
+                  RowHeaderWidth="0">
+
+            <!-- Highlight đỏ khi chưa thanh toán -->
+            <DataGrid.RowStyle>
+                <Style TargetType="DataGridRow">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding IsPaid}" Value="False">
+                            <Setter Property="Background" Value="LightCoral"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </DataGrid.RowStyle>
+
+            <DataGrid.Columns>
+                <DataGridTextColumn x:Name="colRoomName" Header="Phòng" Binding="{Binding RoomName}" Width="80"/>
+                <DataGridTextColumn x:Name="colMonthYear" Header="Tháng" Binding="{Binding MonthYear}" Width="80"/>
+
+                <DataGridTextColumn x:Name="colElectricityOld" Header="Điện cũ" Binding="{Binding ElectricityOld}" Width="70"/>
+                <DataGridTextColumn x:Name="colElectricityNew" Header="Điện mới" Binding="{Binding ElectricityNew}" Width="70"/>
+                <DataGridTextColumn x:Name="colWaterOld" Header="Nước cũ" Binding="{Binding WaterOld}" Width="70"/>
+                <DataGridTextColumn x:Name="colWaterNew" Header="Nước mới" Binding="{Binding WaterNew}" Width="70"/>
+
+                <DataGridTextColumn x:Name="colRoomPrice" Header="Giá thuê" Binding="{Binding RoomPrice, StringFormat=N0}" Width="80"/>
+                <DataGridTextColumn x:Name="colTotalAmount" Header="Tổng tiền" Binding="{Binding TotalAmount, StringFormat=N0}" Width="100"/>
+
+                <DataGridCheckBoxColumn x:Name="colIsPaid" Header="Đã trả" Binding="{Binding IsPaid}" Width="60"/>
+
+                <DataGridTextColumn x:Name="colPaymentDate" Header="Ngày trả" Width="100">
+                    <DataGridTextColumn.Binding>
+                        <Binding Path="PaymentDate" StringFormat="dd/MM/yyyy"/>
+                    </DataGridTextColumn.Binding>
+                </DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="580,427,0,0" VerticalAlignment="Top" Height="25" Width="295">
+            <Button x:Name="btnCreateBill" Content="Tạo Hóa Đơn Mới" Width="150" Margin="0,0,10,0" Click="btnCreateBill_Click"/>
+            <Button x:Name="btnEditBill" Content="Cập Nhật Hóa Đơn" Width="150" Click="btnEditBill_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

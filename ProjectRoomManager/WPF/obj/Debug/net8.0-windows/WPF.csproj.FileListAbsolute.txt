@@ -86,3 +86,17 @@ C:\PRN212_Project\ProjectRoomManager\WPF\obj\Debug\net8.0-windows\RoomManager.g.
 C:\PRN212_Project\ProjectRoomManager\WPF\obj\Debug\net8.0-windows\RoomManager.baml
 C:\PRN212_Project\ProjectRoomManager\WPF\obj\Debug\net8.0-windows\TenantManager.baml
 C:\PRN212_Project\ProjectRoomManager\WPF\obj\Debug\net8.0-windows\TenantManager.g.cs
+C:\PRN212_Project\ProjectRoomManager\WPF\obj\Debug\net8.0-windows\ContractManager.g.cs
+C:\PRN212_Project\ProjectRoomManager\WPF\obj\Debug\net8.0-windows\ContractManager.baml
+C:\PRN212_Project\ProjectRoomManager\WPF\obj\Debug\net8.0-windows\CreateContract.g.cs
+C:\PRN212_Project\ProjectRoomManager\WPF\obj\Debug\net8.0-windows\CreateContract.baml
+C:\PRN212_Project\ProjectRoomManager\WPF\obj\Debug\net8.0-windows\AddRoomate.g.cs
+C:\PRN212_Project\ProjectRoomManager\WPF\obj\Debug\net8.0-windows\AddRoomate.baml
+C:\PRN212_Project\ProjectRoomManager\WPF\obj\Debug\net8.0-windows\MonthlyBillManager.g.cs
+C:\PRN212_Project\ProjectRoomManager\WPF\obj\Debug\net8.0-windows\MonthlyBillManager.baml
+C:\PRN212_Project\ProjectRoomManager\WPF\obj\Debug\net8.0-windows\CreateBillWindow.g.cs
+C:\PRN212_Project\ProjectRoomManager\WPF\obj\Debug\net8.0-windows\CreateBillWindow.baml
+C:\PRN212_Project\ProjectRoomManager\WPF\obj\Debug\net8.0-windows\EditBillWindow.g.cs
+C:\PRN212_Project\ProjectRoomManager\WPF\obj\Debug\net8.0-windows\EditBillWindow.baml
+C:\PRN212_Project\ProjectRoomManager\WPF\obj\Debug\net8.0-windows\PaymentWindow.g.cs
+C:\PRN212_Project\ProjectRoomManager\WPF\obj\Debug\net8.0-windows\PaymentWindow.baml

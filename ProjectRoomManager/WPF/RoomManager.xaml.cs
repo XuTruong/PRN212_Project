@@ -1,33 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 using DataAccess.Models;
 using Services;
 
 namespace WPF
 {
     /// <summary>
-    /// Interaction logic for RoomManager.xaml
+    /// Giao diện xử lý cho RoomManager.xaml
     /// </summary>
     public partial class RoomManager : Window
     {
         RoomService roomService;
+
         public RoomManager()
         {
             InitializeComponent();
             roomService = new RoomService();
-            dgRooms.ItemsSource = roomService.GetAllRooms();
+            dgRooms.ItemsSource = roomService.GetAllRooms(); // Hiển thị danh sách phòng
         }
 
         private void dgRooms_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -46,7 +35,7 @@ namespace WPF
         {
             string keyword = txtSearch.Text.Trim();
             var result = roomService.SearchRooms(keyword);
-            dgRooms.ItemsSource = result;
+            dgRooms.ItemsSource = result; // Tìm kiếm phòng theo từ khóa
         }
 
         private void ClearInputs()
@@ -60,33 +49,32 @@ namespace WPF
 
         private void btnRefresh_Click(object sender, RoutedEventArgs e)
         {
-            ClearInputs();
+            ClearInputs(); // Xóa dữ liệu nhập
         }
 
         private void btnEdit_Click(object sender, RoutedEventArgs e)
         {
-
             if (string.IsNullOrWhiteSpace(txtRoomName.Text) ||
                 string.IsNullOrWhiteSpace(txtArea.Text) ||
                 string.IsNullOrWhiteSpace(txtPrice.Text) ||
                 cmbStatus.SelectedIndex == -1)
             {
-                MessageBox.Show("Please fill in all fields.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Vui lòng điền đầy đủ thông tin.", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
 
             if (!double.TryParse(txtArea.Text.Trim(), out double area) ||
                 !decimal.TryParse(txtPrice.Text.Trim(), out decimal price))
             {
-                MessageBox.Show("Please enter valid numeric values for Area and Price.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Vui lòng nhập số hợp lệ cho Diện tích và Giá thuê.", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
 
             if (dgRooms.SelectedItem is Room selected)
             {
                 selected.RoomName = txtRoomName.Text.Trim();
-                selected.Area = double.Parse(txtArea.Text.Trim());
-                selected.Price = decimal.Parse(txtPrice.Text.Trim());
+                selected.Area = area;
+                selected.Price = price;
                 selected.Status = (cmbStatus.SelectedItem as ComboBoxItem).Content.ToString();
                 roomService.UpdateRoom(selected);
                 dgRooms.ItemsSource = roomService.GetAllRooms();
@@ -94,26 +82,25 @@ namespace WPF
             }
             else
             {
-                MessageBox.Show("Please select a room to edit.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Vui lòng chọn một phòng để chỉnh sửa.", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
         private void btnAdd_Click(object sender, RoutedEventArgs e)
         {
-
             if (string.IsNullOrWhiteSpace(txtRoomName.Text) ||
                 string.IsNullOrWhiteSpace(txtArea.Text) ||
                 string.IsNullOrWhiteSpace(txtPrice.Text) ||
                 cmbStatus.SelectedIndex == -1)
             {
-                MessageBox.Show("Please fill in all fields.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Vui lòng điền đầy đủ thông tin.", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
 
             if (!double.TryParse(txtArea.Text.Trim(), out double area) ||
                 !decimal.TryParse(txtPrice.Text.Trim(), out decimal price))
             {
-                MessageBox.Show("Please enter valid numeric values for Area and Price.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Vui lòng nhập số hợp lệ cho Diện tích và Giá thuê.", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
 
@@ -126,7 +113,7 @@ namespace WPF
             };
 
             roomService.CreateRoom(newRoom);
-            MessageBox.Show("Room added successfully.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+            MessageBox.Show("Thêm phòng thành công.", "Thành công", MessageBoxButton.OK, MessageBoxImage.Information);
             dgRooms.ItemsSource = roomService.GetAllRooms();
             ClearInputs();
         }
@@ -135,23 +122,25 @@ namespace WPF
         {
             if (dgRooms.SelectedItem is not Room selected)
             {
-                MessageBox.Show("Please select a room to delete.", "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show("Vui lòng chọn một phòng để xóa.", "Cảnh báo", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
 
-            var confirm = MessageBox.Show("Are you sure you want to delete this room?", "Confirm",
+            var confirm = MessageBox.Show("Bạn có chắc chắn muốn xóa phòng này không?", "Xác nhận",
                                   MessageBoxButton.YesNo, MessageBoxImage.Question);
 
             if (confirm != MessageBoxResult.Yes) return;
 
-            try {
+            try
+            {
                 roomService.DeleteRoom(selected.RoomId);
-                MessageBox.Show("Room deleted successfully.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                MessageBox.Show("Xóa phòng thành công.", "Thành công", MessageBoxButton.OK, MessageBoxImage.Information);
                 dgRooms.ItemsSource = roomService.GetAllRooms();
                 ClearInputs();
-            } catch (Exception ex)
+            }
+            catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show(ex.Message, "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
     }

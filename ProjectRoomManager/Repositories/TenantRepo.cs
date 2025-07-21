@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DataAccess.Models;
+using Repositories.DTO;
 
 namespace Repositories
 {
@@ -62,5 +63,32 @@ namespace Repositories
                            .ToList();
         }
 
+
+        public List<TenantDisplayDto> GetTenantDto()
+        {
+            // Chỉ lấy TenantId từ các hợp đồng còn hiệu lực
+            var tenantIdsInActiveContracts = _context.Contracts
+                .Where(c => c.IsActive == true)
+                .Select(c => c.TenantId)
+                .ToList();
+
+            // Lấy danh sách người ở ghép hiện tại (có thể thêm điều kiện nếu cần)
+            var roomTenantIds = _context.RoomTenants
+                .Select(rt => rt.TenantId)
+                .ToList();
+
+            return _context.Tenants
+                .Where(t => t.IsActive == true
+                    && !tenantIdsInActiveContracts.Contains(t.TenantId)
+                    && !roomTenantIds.Contains(t.TenantId))
+                .Select(t => new TenantDisplayDto
+                {
+                    TenantId = t.TenantId,
+                    FullName = t.FullName,
+                    IdNumber = t.IdNumber,
+                    PhoneNumber = t.PhoneNumber
+                })
+                .ToList();
+        }
     }
 }

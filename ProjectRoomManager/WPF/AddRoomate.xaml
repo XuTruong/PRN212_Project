@@ -1,0 +1,41 @@
+﻿<Window x:Class="WPF.AddRoomate"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF"
+        mc:Ignorable="d"
+        Title="Thêm người ở ghép" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <StackPanel Orientation="Vertical" Margin="10">
+            <TextBlock Text="Thêm người ở ghép" FontWeight="Bold" FontSize="16" Margin="0,10"/>
+
+            <!-- ComboBox chọn người -->
+            <StackPanel Orientation="Horizontal" Margin="0,5">
+                <TextBlock Text="Người thêm:" Width="120"/>
+                <ComboBox x:Name="cbOtherTenants" Width="300" DisplayMemberPath="DisplayInfo" SelectedValuePath="TenantId"/>
+            </StackPanel>
+
+            <Button Content="Thêm vào phòng" Width="150" Margin="0,10,0,0" Click="AddRoommate_Click"/>
+
+            <!-- Bảng dữ liệu hợp đồng -->
+            <DataGrid x:Name="dgContracts"
+                      Grid.Row="0"
+                      AutoGenerateColumns="False"
+                      IsReadOnly="True" Margin="-2,42,2,103"
+                      SelectedItem="ContractId">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Phòng" Binding="{Binding RoomName}" Width="0.5*" />
+                    <DataGridTextColumn Header="Người thuê chính" Binding="{Binding MainTenantName}" Width="2*" />
+                    <DataGridTextColumn Header="Người ở ghép" Binding="{Binding Roommates}" Width="2*" />
+                    <DataGridTextColumn Header="Bắt đầu" Binding="{Binding StartDate, StringFormat=d}" Width="*" />
+                    <DataGridTextColumn Header="Kết thúc" Binding="{Binding EndDate, StringFormat=d}" Width="*" />
+                    <DataGridTextColumn Header="Tiền cọc" Binding="{Binding Deposit, StringFormat={}{0:N0} ₫}" Width="*" />
+                    <DataGridTextColumn Header="Ghi chú" Binding="{Binding Note}" Width="2*" />
+                </DataGrid.Columns>
+            </DataGrid>
+
+            <!-- Danh sách người thuê -->
+        </StackPanel>
+    </Grid>
+</Window>

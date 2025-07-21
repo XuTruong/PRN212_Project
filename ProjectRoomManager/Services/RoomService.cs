@@ -43,5 +43,25 @@ namespace Services
         }
 
         public void DeleteRoom(int roomId) { RoomRepo.DeleteRoom(roomId); }
+
+        public List<Room> getAllRoomhaveStatus()
+        {
+            return RoomRepo.GetAllRoomsHaveStatus();
+        }
+
+        public List<Room> GetAllRoomsHaveStatusOccupied()
+        {
+            return  RoomRepo.GetAllRoomsHaveStatusOccupied();
+        }
+
+        public decimal GetCurrentRoomPrice(int roomId)
+        {
+            return RoomRepo.GetCurrentRoomPrice(roomId);
+        }
+
+        public int GetRoomIdByContractId(int contractId)
+        {
+            return RoomRepo.GetRoomIdByContractId(contractId);
+        }
     }
 }

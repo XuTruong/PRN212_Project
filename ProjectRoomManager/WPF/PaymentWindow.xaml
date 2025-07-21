@@ -1,0 +1,56 @@
+﻿<Window x:Class="WPF.PaymentWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF"
+        mc:Ignorable="d"
+        Title="Quản Lý Thanh Toán" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="208*"/>
+            <ColumnDefinition Width="75*"/>
+            <ColumnDefinition Width="497*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Bộ lọc tháng năm -->
+        <StackPanel Orientation="Horizontal" Margin="10,0,10,0" VerticalAlignment="Top" Height="35" Grid.ColumnSpan="3">
+            <Label Content="Tháng:" VerticalAlignment="Center"/>
+            <ComboBox x:Name="cbMonth" Width="80" Margin="5,0" Height="26">
+                <ComboBoxItem Content="01"/>
+                <ComboBoxItem Content="02"/>
+                <ComboBoxItem Content="03"/>
+                <ComboBoxItem Content="04"/>
+                <ComboBoxItem Content="05"/>
+                <ComboBoxItem Content="06"/>
+                <ComboBoxItem Content="07"/>
+                <ComboBoxItem Content="08"/>
+                <ComboBoxItem Content="09"/>
+                <ComboBoxItem Content="10"/>
+                <ComboBoxItem Content="11"/>
+                <ComboBoxItem Content="12"/>
+            </ComboBox>
+
+            <Label Content="Năm:" VerticalAlignment="Center" Margin="10,0,0,0"/>
+            <ComboBox x:Name="cbYear" Width="100" Margin="5,0" Height="25"/>
+
+            <Button Content="🔍 Xem" Width="80" Click="btnFilterByMonth_Click" Height="25"/>
+        </StackPanel>
+
+        <!-- Danh sách thanh toán -->
+        <DataGrid x:Name="dgPayments" AutoGenerateColumns="False" ItemsSource="{Binding PaymentItems}" CanUserAddRows="False" Grid.ColumnSpan="3" Margin="0,40,0,0">
+            <DataGrid.Columns>
+                <DataGridCheckBoxColumn Header="✔" Binding="{Binding IsSelected}" Width="40"/>
+                <DataGridTextColumn Header="Phòng" Binding="{Binding RoomName}" Width="*"/>
+                <DataGridTextColumn Header="Số tiền" Binding="{Binding Amount, StringFormat=N0}" Width="*"/>
+                <DataGridTextColumn Header="Ngày thanh toán" Binding="{Binding PaymentDate, StringFormat='dd/MM/yyyy'}" Width="*"/>
+                <DataGridTextColumn Header="Ghi chú" Binding="{Binding Note}" Width="2*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <!-- Nút lưu thanh toán -->
+        <Button Content="💾 Lưu Thanh Toán" Height="40" VerticalAlignment="Bottom"
+                Click="SavePayments_Click" Grid.ColumnSpan="3"/>
+    </Grid>
+</Window>

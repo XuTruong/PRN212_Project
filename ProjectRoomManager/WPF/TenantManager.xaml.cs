@@ -1,25 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 using DataAccess.Models;
-using Repositories;
 using Services;
-using static System.Windows.Forms.MonthCalendar;
 
 namespace WPF
 {
     /// <summary>
-    /// Interaction logic for TenantManager.xaml
+    /// Logic tương tác cho TenantManager.xaml
     /// </summary>
     public partial class TenantManager : Window
     {
@@ -29,7 +16,7 @@ namespace WPF
         {
             InitializeComponent();
             tenantService = new TenantService();
-            dgTenants.ItemsSource = tenantService.GetAllTenants();
+            dgTenants.ItemsSource = tenantService.GetAllTenants(); // Hiển thị danh sách người thuê
         }
 
         private void dgTenants_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -45,13 +32,11 @@ namespace WPF
                     ? selected.Dob.Value.ToDateTime(TimeOnly.MinValue)
                     : null;
 
-
-
-                // Set Gender
+                // Thiết lập giới tính
                 cmbGender.SelectedItem = cmbGender.Items.Cast<ComboBoxItem>()
                     .FirstOrDefault(i => i.Content.ToString().Trim() == selected.Gender);
 
-                // Set IsActive checkbox
+                // Thiết lập trạng thái
                 chkIsActive.IsChecked = selected.IsActive;
             }
         }
@@ -69,17 +54,17 @@ namespace WPF
 
         private void btnActiveOnly_Click(object sender, RoutedEventArgs e)
         {
-            dgTenants.ItemsSource = tenantService.GetActiveTenants();
+            dgTenants.ItemsSource = tenantService.GetActiveTenants(); // Chỉ hiển thị người đang thuê
         }
 
         private void btnInactiveOnly_Click(object sender, RoutedEventArgs e)
         {
-            dgTenants.ItemsSource = tenantService.GetInactiveTenants();
+            dgTenants.ItemsSource = tenantService.GetInactiveTenants(); // Người đã ngừng thuê
         }
 
         private void btnShowAll_Click(object sender, RoutedEventArgs e)
         {
-            dgTenants.ItemsSource = tenantService.GetAllTenants();
+            dgTenants.ItemsSource = tenantService.GetAllTenants(); // Hiển thị tất cả
         }
 
         private void ClearInputs()
@@ -95,7 +80,7 @@ namespace WPF
 
         private void btnRefresh_Click(object sender, RoutedEventArgs e)
         {
-            ClearInputs();
+            ClearInputs(); // Xóa form nhập liệu
         }
 
         private void btnEdit_Click(object sender, RoutedEventArgs e)
@@ -108,62 +93,52 @@ namespace WPF
                 dpDob.SelectedDate == null ||
                 chkIsActive == null)
             {
-                MessageBox.Show("Please fill in all required fields.", "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show("Vui lòng điền đầy đủ thông tin.", "Cảnh báo", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
 
-
-
             if (!IsValidFullName(txtFullName.Text))
             {
-                MessageBox.Show("Full name should only contain letters and spaces.", "Invalid Input", MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show("Họ tên chỉ được chứa chữ cái và khoảng trắng.", "Dữ liệu không hợp lệ", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
 
             if (!IsDigitsOnly(txtPhone.Text))
             {
-                MessageBox.Show("Phone number must contain digits only.", "Invalid Input", MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show("Số điện thoại chỉ được chứa chữ số.", "Dữ liệu không hợp lệ", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
 
             if (!IsDigitsOnly(txtIdNumber.Text))
             {
-                MessageBox.Show("ID Number (CCCD) must contain digits only.", "Invalid Input", MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show("Số CCCD chỉ được chứa chữ số.", "Dữ liệu không hợp lệ", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
 
             if (dgTenants.SelectedItem is Tenant selected)
             {
-                // Cập nhật dữ liệu từ form vào object selected
+                // Cập nhật thông tin
                 selected.FullName = txtFullName.Text;
                 selected.PhoneNumber = txtPhone.Text;
                 selected.IdNumber = txtIdNumber.Text;
                 selected.Address = txtAddress.Text;
                 selected.IsActive = chkIsActive.IsChecked == true;
 
-                // Lấy giới tính từ ComboBox
                 if (cmbGender.SelectedItem is ComboBoxItem genderItem)
-                {
                     selected.Gender = genderItem.Content.ToString();
-                }
 
-                // Ngày sinh
                 if (dpDob.SelectedDate.HasValue)
-                {
                     selected.Dob = DateOnly.FromDateTime(dpDob.SelectedDate.Value);
-                }
 
-                // Gọi service để update
                 tenantService.UpdateTenant(selected);
-                MessageBox.Show("Tenant updated successfully.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                MessageBox.Show("Cập nhật người thuê thành công.", "Thành công", MessageBoxButton.OK, MessageBoxImage.Information);
 
-                // Refresh DataGrid
                 dgTenants.ItemsSource = tenantService.GetAllTenants();
                 ClearInputs();
             }
             else
             {
-                MessageBox.Show("Please select a tenant to edit.", "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show("Vui lòng chọn người thuê để chỉnh sửa.", "Cảnh báo", MessageBoxButton.OK, MessageBoxImage.Warning);
             }
         }
 
@@ -187,27 +162,32 @@ namespace WPF
                 dpDob.SelectedDate == null ||
                 chkIsActive == null)
             {
-                MessageBox.Show("Please fill in all required fields.", "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show("Vui lòng điền đầy đủ thông tin.", "Cảnh báo", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
 
-
-
             if (!IsValidFullName(txtFullName.Text))
             {
-                MessageBox.Show("Full name should only contain letters and spaces.", "Invalid Input", MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show("Họ tên chỉ được chứa chữ cái và khoảng trắng.", "Dữ liệu không hợp lệ", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
 
             if (!IsDigitsOnly(txtPhone.Text))
             {
-                MessageBox.Show("Phone number must contain digits only.", "Invalid Input", MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show("Số điện thoại chỉ được chứa chữ số.", "Dữ liệu không hợp lệ", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
 
             if (!IsDigitsOnly(txtIdNumber.Text))
             {
-                MessageBox.Show("ID Number (CCCD) must contain digits only.", "Invalid Input", MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show("Số CCCD chỉ được chứa chữ số.", "Dữ liệu không hợp lệ", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+
+            var existingTenants = tenantService.GetAllTenants();
+            if (existingTenants.Any(t => t.IdNumber == txtIdNumber.Text))
+            {
+                MessageBox.Show("Số CCCD đã tồn tại. Vui lòng nhập số khác.", "Trùng lặp", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
 
@@ -223,7 +203,8 @@ namespace WPF
             };
 
             tenantService.CreateTenant(newTenant);
-            MessageBox.Show("Tenant added successfully.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+            MessageBox.Show("Thêm người thuê thành công.", "Thành công", MessageBoxButton.OK, MessageBoxImage.Information);
+
             dgTenants.ItemsSource = tenantService.GetAllTenants();
             ClearInputs();
         }
@@ -232,25 +213,25 @@ namespace WPF
         {
             if (dgTenants.SelectedItem is not Tenant selected)
             {
-                MessageBox.Show("Please select a tenant to delete.", "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show("Vui lòng chọn người thuê để xoá.", "Cảnh báo", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
 
-            var confirm = MessageBox.Show("Are you sure you want to delete this tenant?", "Confirm",
-                                  MessageBoxButton.YesNo, MessageBoxImage.Question);
+            var confirm = MessageBox.Show("Bạn có chắc muốn xoá người thuê này không?", "Xác nhận",
+                                          MessageBoxButton.YesNo, MessageBoxImage.Question);
 
             if (confirm != MessageBoxResult.Yes) return;
 
             try
             {
                 tenantService.DeleteTenant(selected.TenantId);
-                MessageBox.Show("Tenant deleted successfully.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                MessageBox.Show("Xoá người thuê thành công.", "Thành công", MessageBoxButton.OK, MessageBoxImage.Information);
                 dgTenants.ItemsSource = tenantService.GetAllTenants();
                 ClearInputs();
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show(ex.Message, "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
     }

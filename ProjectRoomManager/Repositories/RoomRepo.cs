@@ -24,6 +24,16 @@ namespace Repositories
             return _context.Rooms.ToList();
         }
 
+        public List<Room> GetAllRoomsHaveStatus()
+        {
+            return _context.Rooms.Where(r => r.Status.Equals("Available")).ToList();
+        }
+
+        public List<Room> GetAllRoomsHaveStatusOccupied()
+        {
+            return _context.Rooms.Where(r => r.Status.Equals("Occupied")).ToList();
+        }
+
         public void CreateRoom(Room room)
         {
             _context.Rooms.Add(room);
@@ -76,6 +86,25 @@ namespace Repositories
                 return true;
             }
             return false;
+        }
+        
+        public void UpdateAfterHaveContract(int roomId)
+        {
+            var room = _context.Rooms.FirstOrDefault(r => r.RoomId == roomId);
+            room.Status = "Occupied";
+            _context.SaveChanges();
+        }
+
+        public decimal GetCurrentRoomPrice(int roomId)
+        {
+            Room room = _context.Rooms.FirstOrDefault(r => r.RoomId == roomId);
+            return (decimal)(room != null ? room.Price : 0);
+        }
+
+        public int GetRoomIdByContractId(int contractId)
+        {
+            Contract con = _context.Contracts.FirstOrDefault(c => c.ContractId == contractId);
+            return (int)con.RoomId;
         }
     }
 }

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using DataAccess.Models;
 using Microsoft.EntityFrameworkCore;
 using Repositories;
+using Repositories.DTO;
 
 namespace Services
 {
@@ -60,6 +61,11 @@ namespace Services
             if (tenantId <= 0)
                 throw new ArgumentException("Invalid tenant ID.", nameof(tenantId));
             tenantRepo.DeleteTenant(tenantId);
+        }
+
+        public List<TenantDisplayDto> getTenantDto()
+        {
+            return tenantRepo.GetTenantDto();
         }
     }
 }

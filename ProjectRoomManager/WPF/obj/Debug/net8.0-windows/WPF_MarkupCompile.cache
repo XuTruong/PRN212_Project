@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\PRN212_Project\ProjectRoomManager\WPF\App.xaml
-41044236788
+11245903398
 
-7-318000986
+141369704109
 247472135308
-Login.xaml;MainWindow.xaml;RoomManager.xaml;TenantManager.xaml;
+AddRoomate.xaml;ContractManager.xaml;CreateBillWindow.xaml;CreateContract.xaml;EditBillWindow.xaml;Login.xaml;MainWindow.xaml;MonthlyBillManager.xaml;PaymentWindow.xaml;RoomManager.xaml;TenantManager.xaml;
 
 False
 
