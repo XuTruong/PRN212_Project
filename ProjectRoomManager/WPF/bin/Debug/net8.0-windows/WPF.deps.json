@@ -722,6 +722,7 @@
       },
       "Services/1.0.0": {
         "dependencies": {
+          "ClosedXML": "0.105.0",
           "Repositories": "1.0.0"
         },
         "runtime": {

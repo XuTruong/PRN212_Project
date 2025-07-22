@@ -1335,6 +1335,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "ClosedXML": "0.105.0",
           "Repositories": "1.0.0"
         },
         "compile": {

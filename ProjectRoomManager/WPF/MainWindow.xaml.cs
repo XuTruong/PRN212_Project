@@ -44,7 +44,8 @@ namespace WPF
 
         private void Reports_Click(object sender, RoutedEventArgs e)
         {
-
+            var reportWindow = new ReportManager();
+            reportWindow.ShowDialog();
         }
 
     }
