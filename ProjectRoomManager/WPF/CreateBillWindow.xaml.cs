@@ -31,7 +31,7 @@ namespace WPF
         {
             roomService = new RoomService();
             InitializeComponent();
-            cbRoom.ItemsSource = roomService.GetAllRoomsHaveStatusOccupied();
+            cbRoom.ItemsSource = roomService.GetRoomsWithActiveContracts();
         }
 
         private void CreateBillButton_Click(object sender, RoutedEventArgs e)

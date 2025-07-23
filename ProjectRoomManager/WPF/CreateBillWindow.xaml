@@ -5,42 +5,75 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF"
         mc:Ignorable="d"
-        Title="Tạo Hóa Đơn Mới" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+        Title="Tạo Hóa Đơn Mới" Height="520" Width="600"
+        WindowStartupLocation="CenterScreen"
+        Background="#f7fafd">
 
-    <Grid Margin="10">
+    <Grid Margin="20">
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <StackPanel Grid.Row="0" Margin="0 0 0 10">
-            <TextBlock Text="Phòng:"/>
-            <ComboBox x:Name="cbRoom" DisplayMemberPath="RoomName" SelectedValuePath="RoomId" Width="778"/>
+        <GroupBox Header="Thông tin hóa đơn" FontWeight="Bold" FontSize="14" Padding="10" Background="White" BorderBrush="#ccc">
+            <Grid Margin="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="180"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
 
-            <TextBlock Text="Tháng (yyyy-MM):"/>
-            <TextBox x:Name="MonthYearTextBox"/>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
 
-            <TextBlock Text="Chỉ số điện cũ:"/>
-            <TextBox x:Name="ElectricityOldTextBox"/>
+                <!-- Phòng -->
+                <TextBlock Text="Phòng:" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" Margin="0,5"/>
+                <ComboBox x:Name="cbRoom" Grid.Row="0" Grid.Column="1" DisplayMemberPath="RoomName" SelectedValuePath="RoomId"
+                          Height="28" Margin="0,5" />
 
-            <TextBlock Text="Chỉ số điện mới:"/>
-            <TextBox x:Name="ElectricityNewTextBox"/>
+                <!-- Tháng -->
+                <TextBlock Text="Tháng (yyyy-MM):" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" Margin="0,5"/>
+                <TextBox x:Name="MonthYearTextBox" Grid.Row="1" Grid.Column="1" Height="28" Margin="0,5"/>
 
-            <TextBlock Text="Chỉ số nước cũ:"/>
-            <TextBox x:Name="WaterOldTextBox"/>
+                <!-- Điện cũ -->
+                <TextBlock Text="Chỉ số điện cũ:" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" Margin="0,5"/>
+                <TextBox x:Name="ElectricityOldTextBox" Grid.Row="2" Grid.Column="1" Height="28" Margin="0,5"/>
 
-            <TextBlock Text="Chỉ số nước mới:"/>
-            <TextBox x:Name="WaterNewTextBox"/>
+                <!-- Điện mới -->
+                <TextBlock Text="Chỉ số điện mới:" Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" Margin="0,5"/>
+                <TextBox x:Name="ElectricityNewTextBox" Grid.Row="3" Grid.Column="1" Height="28" Margin="0,5"/>
 
-            <TextBlock Text="Đơn giá điện:"/>
-            <TextBox x:Name="ElectricityRateTextBox"/>
+                <!-- Nước cũ -->
+                <TextBlock Text="Chỉ số nước cũ:" Grid.Row="4" Grid.Column="0" VerticalAlignment="Center" Margin="0,5"/>
+                <TextBox x:Name="WaterOldTextBox" Grid.Row="4" Grid.Column="1" Height="28" Margin="0,5"/>
 
-            <TextBlock Text="Đơn giá nước:"/>
-            <TextBox x:Name="WaterRateTextBox"/>
+                <!-- Nước mới -->
+                <TextBlock Text="Chỉ số nước mới:" Grid.Row="5" Grid.Column="0" VerticalAlignment="Center" Margin="0,5"/>
+                <TextBox x:Name="WaterNewTextBox" Grid.Row="5" Grid.Column="1" Height="28" Margin="0,5"/>
+
+                <!-- Đơn giá điện -->
+                <TextBlock Text="Đơn giá điện:" Grid.Row="6" Grid.Column="0" VerticalAlignment="Center" Margin="0,5"/>
+                <TextBox x:Name="ElectricityRateTextBox" Grid.Row="6" Grid.Column="1" Height="28" Margin="0,5"/>
+
+                <!-- Đơn giá nước -->
+                <TextBlock Text="Đơn giá nước:" Grid.Row="7" Grid.Column="0" VerticalAlignment="Center" Margin="0,5"/>
+                <TextBox x:Name="WaterRateTextBox" Grid.Row="7" Grid.Column="1" Height="28" Margin="0,5"/>
+            </Grid>
+        </GroupBox>
+
+        <!-- Nút -->
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,0,0">
+            <Button x:Name="btnCreateBill" Content="🧾 Tạo Hóa Đơn" Width="160" Height="35"
+                    Background="#2e8bfa" Foreground="White" FontWeight="Bold"
+                    Click="CreateBillButton_Click" />
         </StackPanel>
-
-        <Button Grid.Row="2" Content="Tạo Hóa Đơn" Height="30" HorizontalAlignment="Center" Width="150"
-                Click="CreateBillButton_Click"/>
     </Grid>
 </Window>

@@ -85,7 +85,7 @@ namespace Repositories
         public void UpdateAfterHaveContract(int roomId)
         {
             var room = _context.Rooms.FirstOrDefault(r => r.RoomId == roomId);
-            room.Status = "Occupied";
+            room.Status = "Trống";
             _context.SaveChanges();
         }
 
@@ -99,6 +99,14 @@ namespace Repositories
         {
             Contract con = _context.Contracts.FirstOrDefault(c => c.ContractId == contractId);
             return (int)con.RoomId;
+        }
+
+        public List<Room> GetRoomsWithActiveContracts()
+        {
+            return _context.Rooms
+                .Where(r => _context.Contracts
+                    .Any(c => c.RoomId == r.RoomId && c.IsActive == true))
+                .ToList();
         }
     }
 }

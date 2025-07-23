@@ -27,9 +27,10 @@ namespace WPF
 
         private void LoadRooms()
         {
-            var roomService = new RoomService(); // Bạn cần có RoomService
-            var rooms = roomService.GetAllRoomsHaveStatusOccupied(); // Trả về List<Room>
+            var rooms = roomService.GetRoomsWithActiveContracts(); // Sử dụng hàm mới
             cbRoom.ItemsSource = rooms;
+            cbRoom.DisplayMemberPath = "RoomName"; // Hiển thị tên phòng
+            cbRoom.SelectedValuePath = "RoomId";   // Giá trị là RoomId
         }
 
         private void LoadBillData()

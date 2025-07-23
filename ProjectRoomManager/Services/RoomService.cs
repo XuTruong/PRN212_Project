@@ -63,5 +63,10 @@ namespace Services
         {
             return RoomRepo.GetRoomIdByContractId(contractId);
         }
+
+        public List<Room> GetRoomsWithActiveContracts()
+        {
+            return RoomRepo.GetRoomsWithActiveContracts();
+        }
     }
 }

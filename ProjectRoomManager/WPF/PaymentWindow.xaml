@@ -5,19 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF"
         mc:Ignorable="d"
-        Title="Quản Lý Thanh Toán" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+        Title="Quản Lý Thanh Toán" Height="550" Width="900" WindowStartupLocation="CenterScreen"
+        Background="#f9fafc" FontSize="14">
 
-    <Grid Margin="10">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="208*"/>
-            <ColumnDefinition Width="75*"/>
-            <ColumnDefinition Width="497*"/>
-        </Grid.ColumnDefinitions>
+    <Grid Margin="15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
 
-        <!-- Bộ lọc tháng năm -->
-        <StackPanel Orientation="Horizontal" Margin="10,0,10,0" VerticalAlignment="Top" Height="35" Grid.ColumnSpan="3">
+        <!-- Bộ lọc -->
+        <StackPanel Orientation="Horizontal" Margin="0 0 0 10" VerticalAlignment="Top">
             <Label Content="Tháng:" VerticalAlignment="Center"/>
-            <ComboBox x:Name="cbMonth" Width="80" Margin="5,0" Height="26">
+            <ComboBox x:Name="cbMonth" Width="60" Margin="5 0" Height="28">
                 <ComboBoxItem Content="01"/>
                 <ComboBoxItem Content="02"/>
                 <ComboBoxItem Content="03"/>
@@ -32,14 +33,24 @@
                 <ComboBoxItem Content="12"/>
             </ComboBox>
 
-            <Label Content="Năm:" VerticalAlignment="Center" Margin="10,0,0,0"/>
-            <ComboBox x:Name="cbYear" Width="100" Margin="5,0" Height="25"/>
+            <Label Content="Năm:" VerticalAlignment="Center" Margin="15,0,0,0"/>
+            <ComboBox x:Name="cbYear" Width="100" Margin="5 0" Height="28"/>
 
-            <Button Content="🔍 Xem" Width="80" Click="btnFilterByMonth_Click" Height="25"/>
+            <Button Content="🔍 Xem" Width="90" Height="28" Margin="15 0" 
+                    Background="#4a90e2" Foreground="White" FontWeight="Bold"
+                    Click="btnFilterByMonth_Click"/>
         </StackPanel>
 
-        <!-- Danh sách thanh toán -->
-        <DataGrid x:Name="dgPayments" AutoGenerateColumns="False" ItemsSource="{Binding PaymentItems}" CanUserAddRows="False" Grid.ColumnSpan="3" Margin="0,40,0,0">
+        <!-- Bảng dữ liệu -->
+        <DataGrid x:Name="dgPayments" Grid.Row="1" Margin="0 0 0 10"
+                  AutoGenerateColumns="False" 
+                  CanUserAddRows="False"
+                  HeadersVisibility="Column"
+                  RowHeaderWidth="0"
+                  ColumnHeaderHeight="30"
+                  RowHeight="35"
+                  AlternatingRowBackground="#f0f4f8"
+                  ItemsSource="{Binding PaymentItems}">
             <DataGrid.Columns>
                 <DataGridCheckBoxColumn Header="✔" Binding="{Binding IsSelected}" Width="40"/>
                 <DataGridTextColumn Header="Phòng" Binding="{Binding RoomName}" Width="*"/>
@@ -49,14 +60,14 @@
             </DataGrid.Columns>
         </DataGrid>
 
-        <!-- Nút lưu thanh toán -->
-        <Button Content="💾 Lưu Thanh Toán" Height="40" VerticalAlignment="Bottom"
-                Click="SavePayments_Click" Grid.ColumnSpan="3"/>
-
-        <Button Content="📤 Xuất Excel" Height="35" Width="100"
-        Click="ExportToExcel_Click"
-        HorizontalAlignment="Right"
-        VerticalAlignment="Bottom"
-        Margin="0,0,43,65" Grid.Column="2"/>
+        <!-- Các nút -->
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0 10 0 0">
+            <Button Content="📤 Xuất Excel" Width="120" Height="35" Margin="0,0,10,0"
+                    Background="#5cb85c" Foreground="White" FontWeight="Bold"
+                    Click="ExportToExcel_Click"/>
+            <Button Content="💾 Lưu Thanh Toán" Width="160" Height="35"
+                    Background="#0275d8" Foreground="White" FontWeight="Bold"
+                    Click="SavePayments_Click"/>
+        </StackPanel>
     </Grid>
-</Window>
+</Window>
