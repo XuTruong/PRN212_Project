@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using DataAccess.Models;
+﻿using DataAccess.Models;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Storage.Json;
 
 namespace Repositories
 {
@@ -26,12 +20,12 @@ namespace Repositories
 
         public List<Room> GetAllRoomsHaveStatus()
         {
-            return _context.Rooms.Where(r => r.Status.Equals("Available")).ToList();
+            return _context.Rooms.Where(r => r.Status.Equals("Đang thuê")).ToList();
         }
 
         public List<Room> GetAllRoomsHaveStatusOccupied()
         {
-            return _context.Rooms.Where(r => r.Status.Equals("Occupied")).ToList();
+            return _context.Rooms.Where(r => r.Status.Equals("Trống")).ToList();
         }
 
         public void CreateRoom(Room room)
@@ -87,7 +81,7 @@ namespace Repositories
             }
             return false;
         }
-        
+
         public void UpdateAfterHaveContract(int roomId)
         {
             var room = _context.Rooms.FirstOrDefault(r => r.RoomId == roomId);

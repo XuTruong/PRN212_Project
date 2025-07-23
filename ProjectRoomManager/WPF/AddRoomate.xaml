@@ -5,37 +5,94 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF"
         mc:Ignorable="d"
-        Title="Thêm người ở ghép" Height="450" Width="800" WindowStartupLocation="CenterScreen">
-    <Grid>
-        <StackPanel Orientation="Vertical" Margin="10">
-            <TextBlock Text="Thêm người ở ghép" FontWeight="Bold" FontSize="16" Margin="0,10"/>
+        Title="Thêm người ở ghép" Height="600" Width="1000" WindowStartupLocation="CenterScreen"
+        Background="#f4f6f9">
+    <Grid Margin="20">
+        <Border Background="White" CornerRadius="14" Padding="20" BorderBrush="#ddd" BorderThickness="1">
+            <StackPanel VerticalAlignment="Stretch">
 
-            <!-- ComboBox chọn người -->
-            <StackPanel Orientation="Horizontal" Margin="0,5">
-                <TextBlock Text="Người thêm:" Width="120"/>
-                <ComboBox x:Name="cbOtherTenants" Width="300" DisplayMemberPath="DisplayInfo" SelectedValuePath="TenantId"/>
+                <!-- Tiêu đề -->
+                <TextBlock Text="THÊM NGƯỜI Ở GHÉP"
+                           FontSize="24" FontWeight="Bold" Foreground="#2c3e50"
+                           Margin="0,0,0,20"
+                           HorizontalAlignment="Center"/>
+
+                <!-- Thông tin thêm người ở ghép -->
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,15">
+                    <TextBlock Text="Người thêm:" Width="120" VerticalAlignment="Center"
+                               FontSize="14" Foreground="#555"/>
+                    <ComboBox x:Name="cbOtherTenants"
+                              Width="300"
+                              FontSize="14"
+                              Height="30"
+                              DisplayMemberPath="DisplayInfo"
+                              SelectedValuePath="TenantId"/>
+                </StackPanel>
+
+                <!-- Bảng dữ liệu hợp đồng -->
+                <Border CornerRadius="10" BorderThickness="1" BorderBrush="#ccc" Margin="0,0,0,20" Padding="3">
+                    <DataGrid x:Name="dgContracts"
+                              AutoGenerateColumns="False"
+                              IsReadOnly="True"
+                              CanUserAddRows="False"
+                              RowHeight="34"
+                              ColumnHeaderHeight="40"
+                              HeadersVisibility="Column"
+                              GridLinesVisibility="Horizontal"
+                              Background="White"
+                              RowBackground="White"
+                              AlternatingRowBackground="#f9f9f9"
+                              BorderThickness="0"
+                              VerticalAlignment="Stretch"
+                              ScrollViewer.VerticalScrollBarVisibility="Auto">
+                        <DataGrid.Resources>
+                            <!-- Style cho Header -->
+                            <Style TargetType="DataGridColumnHeader">
+                                <Setter Property="Background" Value="#2980b9"/>
+                                <Setter Property="Foreground" Value="White"/>
+                                <Setter Property="FontWeight" Value="SemiBold"/>
+                                <Setter Property="FontSize" Value="14"/>
+                                <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                                <Setter Property="BorderThickness" Value="0"/>
+                            </Style>
+                        </DataGrid.Resources>
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Phòng" Binding="{Binding RoomName}" Width="1.2*" />
+                            <DataGridTextColumn Header="Người thuê chính" Binding="{Binding MainTenantName}" Width="2*" />
+                            <DataGridTextColumn Header="Người ở ghép" Binding="{Binding Roommates}" Width="2*" />
+                            <DataGridTextColumn Header="Bắt đầu" Binding="{Binding StartDate, StringFormat=d}" Width="1.3*" />
+                            <DataGridTextColumn Header="Kết thúc" Binding="{Binding EndDate, StringFormat=d}" Width="1.3*" />
+                            <DataGridTextColumn Header="Tiền cọc" Binding="{Binding Deposit, StringFormat={}{0:N0} ₫}" Width="1.5*" />
+                            <DataGridTextColumn Header="Ghi chú" Binding="{Binding Note}" Width="3*"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Border>
+
+                <!-- Nút thêm -->
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                    <Button Content="➕ Thêm vào phòng"
+                            Width="180" Height="40"
+                            FontWeight="Bold" FontSize="14"
+                            Background="#3498db" Foreground="White"
+                            BorderThickness="0" Cursor="Hand"
+                            Click="AddRoommate_Click"
+                            Margin="0,0,0,10">
+                        <Button.Effect>
+                            <DropShadowEffect Color="Black" Opacity="0.2" ShadowDepth="2" BlurRadius="5"/>
+                        </Button.Effect>
+                    </Button>
+                </StackPanel>
+
             </StackPanel>
-
-            <Button Content="Thêm vào phòng" Width="150" Margin="0,10,0,0" Click="AddRoommate_Click"/>
-
-            <!-- Bảng dữ liệu hợp đồng -->
-            <DataGrid x:Name="dgContracts"
-                      Grid.Row="0"
-                      AutoGenerateColumns="False"
-                      IsReadOnly="True" Margin="-2,42,2,103"
-                      SelectedItem="ContractId">
-                <DataGrid.Columns>
-                    <DataGridTextColumn Header="Phòng" Binding="{Binding RoomName}" Width="0.5*" />
-                    <DataGridTextColumn Header="Người thuê chính" Binding="{Binding MainTenantName}" Width="2*" />
-                    <DataGridTextColumn Header="Người ở ghép" Binding="{Binding Roommates}" Width="2*" />
-                    <DataGridTextColumn Header="Bắt đầu" Binding="{Binding StartDate, StringFormat=d}" Width="*" />
-                    <DataGridTextColumn Header="Kết thúc" Binding="{Binding EndDate, StringFormat=d}" Width="*" />
-                    <DataGridTextColumn Header="Tiền cọc" Binding="{Binding Deposit, StringFormat={}{0:N0} ₫}" Width="*" />
-                    <DataGridTextColumn Header="Ghi chú" Binding="{Binding Note}" Width="2*" />
-                </DataGrid.Columns>
-            </DataGrid>
-
-            <!-- Danh sách người thuê -->
-        </StackPanel>
+        </Border>
     </Grid>
+
+    <!-- Style để wrap ghi chú -->
+    <Window.Resources>
+        <Style x:Key="WrapTextStyle" TargetType="TextBlock">
+            <Setter Property="TextWrapping" Value="Wrap"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="5,0,5,0"/>
+        </Style>
+    </Window.Resources>
 </Window>

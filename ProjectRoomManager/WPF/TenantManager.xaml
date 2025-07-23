@@ -1,13 +1,30 @@
 ﻿<Window x:Class="WPF.TenantManager"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Quản lý Người thuê" Height="550" Width="950" WindowStartupLocation="CenterScreen">
+        Title="Quản lý Người thuê" Height="600" Width="1050"
+        WindowStartupLocation="CenterScreen"
+        Background="#f0f2f5">
+
+    <Window.Resources>
+        <DropShadowEffect x:Key="DropShadow"
+                          Color="Black" BlurRadius="10" ShadowDepth="2" Opacity="0.25"/>
+        <Style x:Key="PrimaryButton" TargetType="Button">
+            <Setter Property="Background" Value="#3498db"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Padding" Value="8,4"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Effect" Value="{StaticResource DropShadow}"/>
+        </Style>
+    </Window.Resources>
+
     <Grid Margin="10">
         <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
             <ColumnDefinition Width="2*"/>
-            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
@@ -16,64 +33,73 @@
 
         <!-- Tiêu đề -->
         <TextBlock Grid.ColumnSpan="2" Text="Quản lý Người thuê"
-                   FontSize="24" FontWeight="Bold" 
-                   HorizontalAlignment="Center" Margin="0,0,0,10"/>
+                   FontSize="28" FontWeight="Bold"
+                   Foreground="#2c3e50"
+                   HorizontalAlignment="Center" Margin="0,0,0,15"/>
 
-        <!-- Danh sách người thuê -->
-        <DataGrid Grid.Row="1" Grid.Column="0" x:Name="dgTenants"
+        <!-- Danh sách -->
+        <DataGrid x:Name="dgTenants"
+                  Grid.Row="1" Grid.Column="0"
                   AutoGenerateColumns="False" SelectionMode="Single"
-                  SelectionChanged="dgTenants_SelectionChanged" Margin="0,0,10,0">
+                  SelectionChanged="dgTenants_SelectionChanged"
+                  Margin="0,0,15,0"
+                  Background="White" BorderBrush="#ccc" BorderThickness="1">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="ID" Binding="{Binding TenantId}" Width="40"/>
                 <DataGridTextColumn Header="Họ tên" Binding="{Binding FullName}" Width="150"/>
                 <DataGridTextColumn Header="Giới tính" Binding="{Binding Gender}" Width="80"/>
                 <DataGridTextColumn Header="SĐT" Binding="{Binding PhoneNumber}" Width="100"/>
-                <DataGridTextColumn Header="Số CCCD" Binding="{Binding IdNumber}" Width="100"/>
+                <DataGridTextColumn Header="CCCD" Binding="{Binding IdNumber}" Width="100"/>
                 <DataGridTextColumn Header="Ngày sinh" Binding="{Binding Dob, StringFormat=dd/MM/yyyy}" Width="100"/>
                 <DataGridTextColumn Header="Địa chỉ" Binding="{Binding Address}" Width="200"/>
-                <DataGridTextColumn Header="Trạng thái" Binding="{Binding IsActive}" Width="70"/>
+                <DataGridTextColumn Header="Trạng thái" Binding="{Binding IsActive}" Width="80"/>
             </DataGrid.Columns>
         </DataGrid>
 
-        <!-- Form thông tin -->
-        <StackPanel Grid.Row="1" Grid.Column="1" Margin="0,0,0,10">
-            <TextBlock Text="Thông tin người thuê" FontWeight="Bold" FontSize="16" Margin="0,0,0,10"/>
+        <!-- Thông tin người thuê -->
+        <ScrollViewer Grid.Row="1" Grid.Column="1" VerticalScrollBarVisibility="Auto">
+            <StackPanel Margin="0,0,0,10">
+                <TextBlock Text="Thông tin người thuê"
+                           FontWeight="Bold" FontSize="18" Margin="0,0,0,15" Foreground="#2c3e50"/>
 
-            <TextBlock Text="Họ tên" />
-            <TextBox x:Name="txtFullName" Margin="0,0,0,10"/>
+                <TextBlock Text="Họ tên"/>
+                <TextBox x:Name="txtFullName" Margin="0,0,0,10"/>
 
-            <TextBlock Text="Giới tính"/>
-            <ComboBox x:Name="cmbGender" Margin="0,0,0,10">
-                <ComboBoxItem Content="Male"/>
-                <ComboBoxItem Content="Female"/>
-                <ComboBoxItem Content="Other"/>
-            </ComboBox>
+                <TextBlock Text="Giới tính"/>
+                <ComboBox x:Name="cmbGender" Margin="0,0,0,10">
+                    <ComboBoxItem Content="Nam"/>
+                    <ComboBoxItem Content="Nữ"/>
+                    <ComboBoxItem Content="Khác"/>
+                </ComboBox>
 
-            <TextBlock Text="Số điện thoại"/>
-            <TextBox x:Name="txtPhone" Margin="0,0,0,10"/>
+                <TextBlock Text="Số điện thoại"/>
+                <TextBox x:Name="txtPhone" Margin="0,0,0,10"/>
 
-            <TextBlock Text="Số CCCD"/>
-            <TextBox x:Name="txtIdNumber" Margin="0,0,0,10"/>
+                <TextBlock Text="Số CCCD"/>
+                <TextBox x:Name="txtIdNumber" Margin="0,0,0,10"/>
 
-            <TextBlock Text="Ngày sinh"/>
-            <DatePicker x:Name="dpDob" Margin="0,0,0,10"/>
+                <TextBlock Text="Ngày sinh"/>
+                <DatePicker x:Name="dpDob" Margin="0,0,0,10"/>
 
-            <TextBlock Text="Địa chỉ"/>
-            <TextBox x:Name="txtAddress" Margin="0,0,0,10"/>
+                <TextBlock Text="Địa chỉ"/>
+                <TextBox x:Name="txtAddress" Margin="0,0,0,10"/>
 
-            <CheckBox x:Name="chkIsActive" Content="Đang thuê" IsChecked="True" Margin="0,0,0,10"/>
-            <Button Content="Làm mới" Width="100" Click="btnRefresh_Click" RenderTransformOrigin="1.436,3.269"/>
-        </StackPanel>
+                <CheckBox x:Name="chkIsActive" Content="Đang thuê" IsChecked="True" Margin="0,0,0,10"/>
+
+                <Button Content="Làm mới" Width="100" Style="{StaticResource PrimaryButton}" Click="btnRefresh_Click"/>
+            </StackPanel>
+        </ScrollViewer>
 
         <!-- Các nút -->
-        <StackPanel Grid.Row="2" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
-            <Button Content="Thêm" Width="100" Margin="5" Click="btnAdd_Click"/>
-            <Button Content="Sửa" Width="100" Margin="5" Click="btnEdit_Click"/>
-            <Button Content="Xoá" Width="100" Margin="5" Click="btnDelete_Click"/>
-            <TextBox x:Name="txtSearch" Width="150" Margin="10,0,5,0"  TextChanged="txtSearch_TextChanged"/>
-            <Button Content="Đang thuê" Width="130" Margin="5" Click="btnActiveOnly_Click"/>
-            <Button Content="Ngừng thuê" Width="140" Margin="5" Click="btnInactiveOnly_Click"/>
-            <Button Content="Hiện tất cả" Width="100" Margin="5" Click="btnShowAll_Click"/>
+        <StackPanel Grid.Row="2" Grid.ColumnSpan="2" Orientation="Horizontal"
+                    HorizontalAlignment="Center" Margin="0,15,0,0">
+            <Button Content="Thêm" Width="100" Style="{StaticResource PrimaryButton}" Click="btnAdd_Click"/>
+            <Button Content="Sửa" Width="100" Style="{StaticResource PrimaryButton}" Click="btnEdit_Click"/>
+            <Button Content="Xoá" Width="100" Style="{StaticResource PrimaryButton}" Click="btnDelete_Click"/>
+            <TextBox x:Name="txtSearch" Width="150" Margin="10,0,0,0" />
+            <Button Content="Đang thuê" Width="120" Style="{StaticResource PrimaryButton}" Click="btnActiveOnly_Click"/>
+            <Button Content="Ngừng thuê" Width="120" Style="{StaticResource PrimaryButton}" Click="btnInactiveOnly_Click"/>
+            <Button Content="Hiện tất cả" Width="100" Style="{StaticResource PrimaryButton}" Click="btnShowAll_Click"/>
         </StackPanel>
     </Grid>
 </Window>
