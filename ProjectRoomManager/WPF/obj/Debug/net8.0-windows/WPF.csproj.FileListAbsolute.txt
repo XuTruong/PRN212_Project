@@ -110,3 +110,7 @@ C:\PRN212_Project\ProjectRoomManager\WPF\obj\Debug\net8.0-windows\refint\WPF.dll
 C:\PRN212_Project\ProjectRoomManager\WPF\obj\Debug\net8.0-windows\WPF.pdb
 C:\PRN212_Project\ProjectRoomManager\WPF\obj\Debug\net8.0-windows\WPF.genruntimeconfig.cache
 C:\PRN212_Project\ProjectRoomManager\WPF\obj\Debug\net8.0-windows\ref\WPF.dll
+C:\PRN212_Project\ProjectRoomManager\WPF\obj\Debug\net8.0-windows\RoomManager_New.baml
+C:\PRN212_Project\ProjectRoomManager\WPF\obj\Debug\net8.0-windows\TenantManagerTest.baml
+C:\PRN212_Project\ProjectRoomManager\WPF\obj\Debug\net8.0-windows\RoomManager_New.g.cs
+C:\PRN212_Project\ProjectRoomManager\WPF\obj\Debug\net8.0-windows\TenantManagerTest.g.cs
