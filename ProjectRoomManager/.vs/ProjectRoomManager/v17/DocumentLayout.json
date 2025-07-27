@@ -3,16 +3,76 @@
   "WorkspaceRootPath": "C:\\PRN212_Project\\ProjectRoomManager\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|c:\\prn212_project\\projectroommanager\\wpf\\roommanager.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|solutionrelative:wpf\\roommanager.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{01843BF5-E2C7-478B-9907-FB45C4B8BB53}|Repositories\\Repositories.csproj|c:\\prn212_project\\projectroommanager\\repositories\\roomrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01843BF5-E2C7-478B-9907-FB45C4B8BB53}|Repositories\\Repositories.csproj|solutionrelative:repositories\\roomrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{111A353B-9A12-49D7-AFF4-6B2F6ADF383B}|Services\\Services.csproj|c:\\prn212_project\\projectroommanager\\services\\roomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{111A353B-9A12-49D7-AFF4-6B2F6ADF383B}|Services\\Services.csproj|solutionrelative:services\\roomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|c:\\prn212_project\\projectroommanager\\wpf\\editbillwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|solutionrelative:wpf\\editbillwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|c:\\prn212_project\\projectroommanager\\wpf\\createbillwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|solutionrelative:wpf\\createbillwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|c:\\prn212_project\\projectroommanager\\wpf\\monthlybillmanager.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|solutionrelative:wpf\\monthlybillmanager.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|c:\\prn212_project\\projectroommanager\\wpf\\editbillwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|solutionrelative:wpf\\editbillwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|c:\\prn212_project\\projectroommanager\\wpf\\createcontract.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|solutionrelative:wpf\\createcontract.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|c:\\prn212_project\\projectroommanager\\wpf\\createcontract.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|solutionrelative:wpf\\createcontract.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01843BF5-E2C7-478B-9907-FB45C4B8BB53}|Repositories\\Repositories.csproj|c:\\prn212_project\\projectroommanager\\repositories\\contractrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01843BF5-E2C7-478B-9907-FB45C4B8BB53}|Repositories\\Repositories.csproj|solutionrelative:repositories\\contractrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{111A353B-9A12-49D7-AFF4-6B2F6ADF383B}|Services\\Services.csproj|c:\\prn212_project\\projectroommanager\\services\\contractservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{111A353B-9A12-49D7-AFF4-6B2F6ADF383B}|Services\\Services.csproj|solutionrelative:services\\contractservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|c:\\prn212_project\\projectroommanager\\wpf\\contractmanager.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|solutionrelative:wpf\\contractmanager.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01843BF5-E2C7-478B-9907-FB45C4B8BB53}|Repositories\\Repositories.csproj|c:\\prn212_project\\projectroommanager\\repositories\\monthlybillrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01843BF5-E2C7-478B-9907-FB45C4B8BB53}|Repositories\\Repositories.csproj|solutionrelative:repositories\\monthlybillrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{111A353B-9A12-49D7-AFF4-6B2F6ADF383B}|Services\\Services.csproj|c:\\prn212_project\\projectroommanager\\services\\monthlybillservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{111A353B-9A12-49D7-AFF4-6B2F6ADF383B}|Services\\Services.csproj|solutionrelative:services\\monthlybillservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE4728F8-C3AE-4381-8B36-3BA09E601D48}|UnitTests\\UnitTests.csproj|c:\\prn212_project\\projectroommanager\\unittests\\tenantservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE4728F8-C3AE-4381-8B36-3BA09E601D48}|UnitTests\\UnitTests.csproj|solutionrelative:unittests\\tenantservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE4728F8-C3AE-4381-8B36-3BA09E601D48}|UnitTests\\UnitTests.csproj|c:\\prn212_project\\projectroommanager\\unittests\\roomservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE4728F8-C3AE-4381-8B36-3BA09E601D48}|UnitTests\\UnitTests.csproj|solutionrelative:unittests\\roomservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|c:\\prn212_project\\projectroommanager\\wpf\\roommanager.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|solutionrelative:wpf\\roommanager.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|c:\\prn212_project\\projectroommanager\\wpf\\createbillwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|solutionrelative:wpf\\createbillwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|c:\\prn212_project\\projectroommanager\\wpf\\roommanager_new.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|solutionrelative:wpf\\roommanager_new.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|c:\\prn212_project\\projectroommanager\\wpf\\roommanager.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|solutionrelative:wpf\\roommanager.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|c:\\prn212_project\\projectroommanager\\wpf\\addroomate.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,10 +81,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|c:\\prn212_project\\projectroommanager\\wpf\\createbillwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|solutionrelative:wpf\\createbillwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FE4728F8-C3AE-4381-8B36-3BA09E601D48}|UnitTests\\UnitTests.csproj|c:\\prn212_project\\projectroommanager\\unittests\\tenantservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FE4728F8-C3AE-4381-8B36-3BA09E601D48}|UnitTests\\UnitTests.csproj|solutionrelative:unittests\\tenantservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\PRN212_Project\\ProjectRoomManager\\WPF\\obj\\Debug\\net8.0-windows\\TenantManagerTest.g.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -43,10 +99,6 @@
       "RelativeMoniker": "D:0:0:{111A353B-9A12-49D7-AFF4-6B2F6ADF383B}|Services\\Services.csproj|solutionrelative:services\\tenantservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{01843BF5-E2C7-478B-9907-FB45C4B8BB53}|Repositories\\Repositories.csproj|c:\\prn212_project\\projectroommanager\\repositories\\monthlybillrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01843BF5-E2C7-478B-9907-FB45C4B8BB53}|Repositories\\Repositories.csproj|solutionrelative:repositories\\monthlybillrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|c:\\prn212_project\\projectroommanager\\wpf\\tenantmanager.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|solutionrelative:wpf\\tenantmanager.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
@@ -63,32 +115,8 @@
       "RelativeMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|solutionrelative:wpf\\monthlybillmanager.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|c:\\prn212_project\\projectroommanager\\wpf\\editbillwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|solutionrelative:wpf\\editbillwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|c:\\prn212_project\\projectroommanager\\wpf\\editbillwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|solutionrelative:wpf\\editbillwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01843BF5-E2C7-478B-9907-FB45C4B8BB53}|Repositories\\Repositories.csproj|c:\\prn212_project\\projectroommanager\\repositories\\roomrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01843BF5-E2C7-478B-9907-FB45C4B8BB53}|Repositories\\Repositories.csproj|solutionrelative:repositories\\roomrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{111A353B-9A12-49D7-AFF4-6B2F6ADF383B}|Services\\Services.csproj|c:\\prn212_project\\projectroommanager\\services\\roomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{111A353B-9A12-49D7-AFF4-6B2F6ADF383B}|Services\\Services.csproj|solutionrelative:services\\roomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|c:\\prn212_project\\projectroommanager\\wpf\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|solutionrelative:wpf\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|c:\\prn212_project\\projectroommanager\\wpf\\monthlybillmanager.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|solutionrelative:wpf\\monthlybillmanager.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|c:\\prn212_project\\projectroommanager\\wpf\\createcontract.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|solutionrelative:wpf\\createcontract.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|c:\\prn212_project\\projectroommanager\\wpf\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -103,18 +131,6 @@
       "RelativeMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|solutionrelative:wpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{01843BF5-E2C7-478B-9907-FB45C4B8BB53}|Repositories\\Repositories.csproj|c:\\prn212_project\\projectroommanager\\repositories\\contractrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01843BF5-E2C7-478B-9907-FB45C4B8BB53}|Repositories\\Repositories.csproj|solutionrelative:repositories\\contractrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{111A353B-9A12-49D7-AFF4-6B2F6ADF383B}|Services\\Services.csproj|c:\\prn212_project\\projectroommanager\\services\\contractservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{111A353B-9A12-49D7-AFF4-6B2F6ADF383B}|Services\\Services.csproj|solutionrelative:services\\contractservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|c:\\prn212_project\\projectroommanager\\wpf\\createcontract.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|solutionrelative:wpf\\createcontract.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|c:\\prn212_project\\projectroommanager\\wpf\\contractmanager.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|solutionrelative:wpf\\contractmanager.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
@@ -123,24 +139,12 @@
       "RelativeMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|solutionrelative:wpf\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FE4728F8-C3AE-4381-8B36-3BA09E601D48}|UnitTests\\UnitTests.csproj|c:\\prn212_project\\projectroommanager\\unittests\\roomservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FE4728F8-C3AE-4381-8B36-3BA09E601D48}|UnitTests\\UnitTests.csproj|solutionrelative:unittests\\roomservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|c:\\prn212_project\\projectroommanager\\wpf\\paymentwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|solutionrelative:wpf\\paymentwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{01843BF5-E2C7-478B-9907-FB45C4B8BB53}|Repositories\\Repositories.csproj|c:\\prn212_project\\projectroommanager\\repositories\\dto\\paymentitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{01843BF5-E2C7-478B-9907-FB45C4B8BB53}|Repositories\\Repositories.csproj|solutionrelative:repositories\\dto\\paymentitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|c:\\prn212_project\\projectroommanager\\wpf\\contractmanager.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|solutionrelative:wpf\\contractmanager.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{111A353B-9A12-49D7-AFF4-6B2F6ADF383B}|Services\\Services.csproj|c:\\prn212_project\\projectroommanager\\services\\monthlybillservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{111A353B-9A12-49D7-AFF4-6B2F6ADF383B}|Services\\Services.csproj|solutionrelative:services\\monthlybillservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{01843BF5-E2C7-478B-9907-FB45C4B8BB53}|Repositories\\Repositories.csproj|c:\\prn212_project\\projectroommanager\\repositories\\tenantrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -210,7 +214,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 21,
+          "SelectedChildIndex": 23,
           "Children": [
             {
               "$type": "Bookmark",
@@ -274,108 +278,200 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TenantServiceTests.cs",
-              "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\UnitTests\\TenantServiceTests.cs",
-              "RelativeDocumentMoniker": "UnitTests\\TenantServiceTests.cs",
-              "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\UnitTests\\TenantServiceTests.cs",
-              "RelativeToolTip": "UnitTests\\TenantServiceTests.cs",
-              "ViewState": "AgIAAK8AAAAAAAAAAAAjwMEAAAAoAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "ContractService.cs",
+              "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\Services\\ContractService.cs",
+              "RelativeDocumentMoniker": "Services\\ContractService.cs",
+              "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\Services\\ContractService.cs",
+              "RelativeToolTip": "Services\\ContractService.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAIA0wCsAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-27T16:43:39.914Z",
+              "WhenOpened": "2025-07-20T05:13:33.703Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "MonthlyBillRepo.cs",
-              "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\Repositories\\MonthlyBillRepo.cs",
-              "RelativeDocumentMoniker": "Repositories\\MonthlyBillRepo.cs",
-              "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\Repositories\\MonthlyBillRepo.cs",
-              "RelativeToolTip": "Repositories\\MonthlyBillRepo.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAqwG4AAAAeAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "ContractRepo.cs",
+              "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\Repositories\\ContractRepo.cs",
+              "RelativeDocumentMoniker": "Repositories\\ContractRepo.cs",
+              "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\Repositories\\ContractRepo.cs",
+              "RelativeToolTip": "Repositories\\ContractRepo.cs",
+              "ViewState": "AgIAAJ4AAAAAAAAAAAApwLEAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T14:13:14.846Z",
+              "WhenOpened": "2025-07-20T04:50:04.237Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CreateContract.xaml",
+              "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\CreateContract.xaml",
+              "RelativeDocumentMoniker": "WPF\\CreateContract.xaml",
+              "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\CreateContract.xaml",
+              "RelativeToolTip": "WPF\\CreateContract.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-20T07:36:25.012Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EditBillWindow.xaml",
+              "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\EditBillWindow.xaml",
+              "RelativeDocumentMoniker": "WPF\\EditBillWindow.xaml",
+              "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\EditBillWindow.xaml",
+              "RelativeToolTip": "WPF\\EditBillWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-20T17:50:24.693Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "CreateBillWindow.xaml",
-              "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\CreateBillWindow.xaml",
-              "RelativeDocumentMoniker": "WPF\\CreateBillWindow.xaml",
-              "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\CreateBillWindow.xaml",
-              "RelativeToolTip": "WPF\\CreateBillWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-20T15:56:53.455Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\App.xaml",
-              "RelativeDocumentMoniker": "WPF\\App.xaml",
-              "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\App.xaml",
-              "RelativeToolTip": "WPF\\App.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-12T05:50:01.489Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AddRoomate.xaml.cs",
-              "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\AddRoomate.xaml.cs",
-              "RelativeDocumentMoniker": "WPF\\AddRoomate.xaml.cs",
-              "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\AddRoomate.xaml.cs",
-              "RelativeToolTip": "WPF\\AddRoomate.xaml.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAEwBYAAABOAAAAAAAAAA==",
+              "Title": "MonthlyBillManager.xaml.cs",
+              "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\MonthlyBillManager.xaml.cs",
+              "RelativeDocumentMoniker": "WPF\\MonthlyBillManager.xaml.cs",
+              "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\MonthlyBillManager.xaml.cs",
+              "RelativeToolTip": "WPF\\MonthlyBillManager.xaml.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAwwDkAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T10:38:22.183Z",
+              "WhenOpened": "2025-07-20T15:34:33.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CreateContract.xaml.cs",
+              "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\CreateContract.xaml.cs",
+              "RelativeDocumentMoniker": "WPF\\CreateContract.xaml.cs",
+              "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\CreateContract.xaml.cs",
+              "RelativeToolTip": "WPF\\CreateContract.xaml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAgwBcAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-20T07:41:56.635Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "EditBillWindow.xaml.cs",
+              "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\EditBillWindow.xaml.cs",
+              "RelativeDocumentMoniker": "WPF\\EditBillWindow.xaml.cs",
+              "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\EditBillWindow.xaml.cs",
+              "RelativeToolTip": "WPF\\EditBillWindow.xaml.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAowDcAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-20T17:50:42.354Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RoomService.cs",
+              "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\Services\\RoomService.cs",
+              "RelativeDocumentMoniker": "Services\\RoomService.cs",
+              "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\Services\\RoomService.cs",
+              "RelativeToolTip": "Services\\RoomService.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAQwEQAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-12T06:50:29.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RoomRepo.cs",
+              "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\Repositories\\RoomRepo.cs",
+              "RelativeDocumentMoniker": "Repositories\\RoomRepo.cs",
+              "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\Repositories\\RoomRepo.cs",
+              "RelativeToolTip": "Repositories\\RoomRepo.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAUwFwAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-12T05:28:21.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "CreateBillWindow.xaml.cs",
               "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\CreateBillWindow.xaml.cs",
               "RelativeDocumentMoniker": "WPF\\CreateBillWindow.xaml.cs",
               "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\CreateBillWindow.xaml.cs",
               "RelativeToolTip": "WPF\\CreateBillWindow.xaml.cs",
-              "ViewState": "AgIAAFIAAAAAAAAAAAAMwFsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAmwBcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-20T16:04:38.265Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RoomManager.xaml",
-              "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\RoomManager.xaml",
-              "RelativeDocumentMoniker": "WPF\\RoomManager.xaml",
-              "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\RoomManager.xaml*",
-              "RelativeToolTip": "WPF\\RoomManager.xaml*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-12T06:32:57.79Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RoomManager.xaml.cs",
-              "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\RoomManager.xaml.cs",
-              "RelativeDocumentMoniker": "WPF\\RoomManager.xaml.cs",
-              "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\RoomManager.xaml.cs",
-              "RelativeToolTip": "WPF\\RoomManager.xaml.cs",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAAAKkAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "ContractManager.xaml.cs",
+              "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\ContractManager.xaml.cs",
+              "RelativeDocumentMoniker": "WPF\\ContractManager.xaml.cs",
+              "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\ContractManager.xaml.cs",
+              "RelativeToolTip": "WPF\\ContractManager.xaml.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAA/wDEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-12T06:41:17.299Z",
+              "WhenOpened": "2025-07-20T04:49:10.364Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
+              "Title": "MonthlyBillRepo.cs",
+              "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\Repositories\\MonthlyBillRepo.cs",
+              "RelativeDocumentMoniker": "Repositories\\MonthlyBillRepo.cs",
+              "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\Repositories\\MonthlyBillRepo.cs",
+              "RelativeToolTip": "Repositories\\MonthlyBillRepo.cs",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAIwG0AAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-20T14:13:14.846Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MonthlyBillService.cs",
+              "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\Services\\MonthlyBillService.cs",
+              "RelativeDocumentMoniker": "Services\\MonthlyBillService.cs",
+              "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\Services\\MonthlyBillService.cs",
+              "RelativeToolTip": "Services\\MonthlyBillService.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAQwCUAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-20T15:35:03.87Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "RoomServiceTests.cs",
+              "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\UnitTests\\RoomServiceTests.cs",
+              "RelativeDocumentMoniker": "UnitTests\\RoomServiceTests.cs",
+              "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\UnitTests\\RoomServiceTests.cs",
+              "RelativeToolTip": "UnitTests\\RoomServiceTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-22T23:47:52.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "TenantServiceTests.cs",
+              "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\UnitTests\\TenantServiceTests.cs",
+              "RelativeDocumentMoniker": "UnitTests\\TenantServiceTests.cs",
+              "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\UnitTests\\TenantServiceTests.cs",
+              "RelativeToolTip": "UnitTests\\TenantServiceTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-27T16:43:39.914Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
               "Title": "RoomManager_New.g.cs",
               "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\obj\\Debug\\net8.0-windows\\RoomManager_New.g.cs",
               "RelativeDocumentMoniker": "WPF\\obj\\Debug\\net8.0-windows\\RoomManager_New.g.cs",
@@ -388,19 +484,81 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "MonthlyBillManager.xaml.cs",
-              "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\MonthlyBillManager.xaml.cs",
-              "RelativeDocumentMoniker": "WPF\\MonthlyBillManager.xaml.cs",
-              "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\MonthlyBillManager.xaml.cs",
-              "RelativeToolTip": "WPF\\MonthlyBillManager.xaml.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAgwDkAAAAzAAAAAAAAAA==",
+              "DocumentIndex": 15,
+              "Title": "RoomManager.xaml.cs",
+              "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\RoomManager.xaml.cs",
+              "RelativeDocumentMoniker": "WPF\\RoomManager.xaml.cs",
+              "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\RoomManager.xaml.cs",
+              "RelativeToolTip": "WPF\\RoomManager.xaml.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAYwFsAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T15:34:33.83Z"
+              "WhenOpened": "2025-07-12T06:41:17.299Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 17,
+              "Title": "RoomManager.xaml",
+              "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\RoomManager.xaml",
+              "RelativeDocumentMoniker": "WPF\\RoomManager.xaml",
+              "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\RoomManager.xaml",
+              "RelativeToolTip": "WPF\\RoomManager.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-12T06:32:57.79Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AddRoomate.xaml.cs",
+              "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\AddRoomate.xaml.cs",
+              "RelativeDocumentMoniker": "WPF\\AddRoomate.xaml.cs",
+              "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\AddRoomate.xaml.cs",
+              "RelativeToolTip": "WPF\\AddRoomate.xaml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAEwBYAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-20T10:38:22.183Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\App.xaml",
+              "RelativeDocumentMoniker": "WPF\\App.xaml",
+              "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\App.xaml",
+              "RelativeToolTip": "WPF\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-12T05:50:01.489Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CreateBillWindow.xaml",
+              "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\CreateBillWindow.xaml",
+              "RelativeDocumentMoniker": "WPF\\CreateBillWindow.xaml",
+              "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\CreateBillWindow.xaml",
+              "RelativeToolTip": "WPF\\CreateBillWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-20T15:56:53.455Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "RoomManager_New.xaml",
+              "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\RoomManager_New.xaml",
+              "RelativeDocumentMoniker": "WPF\\RoomManager_New.xaml",
+              "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\RoomManager_New.xaml",
+              "RelativeToolTip": "WPF\\RoomManager_New.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-27T17:25:09.347Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
               "Title": "TenantManagerTest.g.cs",
               "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\obj\\Debug\\net8.0-windows\\TenantManagerTest.g.cs",
               "RelativeDocumentMoniker": "WPF\\obj\\Debug\\net8.0-windows\\TenantManagerTest.g.cs",
@@ -413,7 +571,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 24,
               "Title": "TenantManager.xaml",
               "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\TenantManager.xaml",
               "RelativeDocumentMoniker": "WPF\\TenantManager.xaml",
@@ -424,18 +582,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "EditBillWindow.xaml",
-              "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\EditBillWindow.xaml",
-              "RelativeDocumentMoniker": "WPF\\EditBillWindow.xaml",
-              "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\EditBillWindow.xaml",
-              "RelativeToolTip": "WPF\\EditBillWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-20T17:50:24.693Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 26,
               "Title": "PaymentWindow.xaml",
               "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\PaymentWindow.xaml",
               "RelativeDocumentMoniker": "WPF\\PaymentWindow.xaml",
@@ -446,19 +593,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "CreateContract.xaml.cs",
-              "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\CreateContract.xaml.cs",
-              "RelativeDocumentMoniker": "WPF\\CreateContract.xaml.cs",
-              "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\CreateContract.xaml.cs",
-              "RelativeToolTip": "WPF\\CreateContract.xaml.cs",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAqwFoAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T07:41:56.635Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 23,
               "Title": "TenantService.cs",
               "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\Services\\TenantService.cs",
               "RelativeDocumentMoniker": "Services\\TenantService.cs",
@@ -471,7 +606,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 22,
               "Title": "TenantManager.xaml.cs",
               "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\TenantManager.xaml.cs",
               "RelativeDocumentMoniker": "WPF\\TenantManager.xaml.cs",
@@ -484,7 +619,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 27,
               "Title": "MonthlyBillManager.xaml",
               "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\MonthlyBillManager.xaml",
               "RelativeDocumentMoniker": "WPF\\MonthlyBillManager.xaml",
@@ -495,7 +630,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 28,
               "Title": "AssemblyInfo.cs",
               "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\AssemblyInfo.cs",
               "RelativeDocumentMoniker": "WPF\\AssemblyInfo.cs",
@@ -507,7 +642,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 35,
               "Title": "PaymentItem.cs",
               "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\Repositories\\DTO\\PaymentItem.cs",
               "RelativeDocumentMoniker": "Repositories\\DTO\\PaymentItem.cs",
@@ -519,54 +654,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "RoomService.cs",
-              "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\Services\\RoomService.cs",
-              "RelativeDocumentMoniker": "Services\\RoomService.cs",
-              "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\Services\\RoomService.cs",
-              "RelativeToolTip": "Services\\RoomService.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAQwDUAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-12T06:50:29.89Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "RoomRepo.cs",
-              "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\Repositories\\RoomRepo.cs",
-              "RelativeDocumentMoniker": "Repositories\\RoomRepo.cs",
-              "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\Repositories\\RoomRepo.cs",
-              "RelativeToolTip": "Repositories\\RoomRepo.cs",
-              "ViewState": "AgIAAF4AAAAAAAAAAAAcwBwAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-12T05:28:21.016Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "EditBillWindow.xaml.cs",
-              "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\EditBillWindow.xaml.cs",
-              "RelativeDocumentMoniker": "WPF\\EditBillWindow.xaml.cs",
-              "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\EditBillWindow.xaml.cs",
-              "RelativeToolTip": "WPF\\EditBillWindow.xaml.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAmwCsAAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T17:50:42.354Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "CreateContract.xaml",
-              "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\CreateContract.xaml",
-              "RelativeDocumentMoniker": "WPF\\CreateContract.xaml",
-              "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\CreateContract.xaml",
-              "RelativeToolTip": "WPF\\CreateContract.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-20T07:36:25.012Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 30,
               "Title": "AddRoomate.xaml",
               "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\AddRoomate.xaml",
               "RelativeDocumentMoniker": "WPF\\AddRoomate.xaml",
@@ -577,7 +665,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 29,
               "Title": "Login.xaml.cs",
               "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\Login.xaml.cs",
               "RelativeDocumentMoniker": "WPF\\Login.xaml.cs",
@@ -589,42 +677,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "ContractService.cs",
-              "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\Services\\ContractService.cs",
-              "RelativeDocumentMoniker": "Services\\ContractService.cs",
-              "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\Services\\ContractService.cs",
-              "RelativeToolTip": "Services\\ContractService.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAIwBYAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T05:13:33.703Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 32,
               "Title": "ContractManager.xaml",
               "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\ContractManager.xaml",
               "RelativeDocumentMoniker": "WPF\\ContractManager.xaml",
               "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\ContractManager.xaml",
               "RelativeToolTip": "WPF\\ContractManager.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-20T04:48:46.612Z"
+              "WhenOpened": "2025-07-20T04:48:46.612Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "ContractRepo.cs",
-              "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\Repositories\\ContractRepo.cs",
-              "RelativeDocumentMoniker": "Repositories\\ContractRepo.cs",
-              "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\Repositories\\ContractRepo.cs",
-              "RelativeToolTip": "Repositories\\ContractRepo.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAkwDgAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T04:50:04.237Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 31,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "WPF\\MainWindow.xaml.cs",
@@ -636,7 +701,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 33,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\MainWindow.xaml",
               "RelativeDocumentMoniker": "WPF\\MainWindow.xaml",
@@ -647,19 +712,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "RoomServiceTests.cs",
-              "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\UnitTests\\RoomServiceTests.cs",
-              "RelativeDocumentMoniker": "UnitTests\\RoomServiceTests.cs",
-              "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\UnitTests\\RoomServiceTests.cs",
-              "RelativeToolTip": "UnitTests\\RoomServiceTests.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAgwBMAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-22T23:47:52.114Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 34,
               "Title": "PaymentWindow.xaml.cs",
               "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\PaymentWindow.xaml.cs",
               "RelativeDocumentMoniker": "WPF\\PaymentWindow.xaml.cs",
@@ -671,31 +724,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "ContractManager.xaml.cs",
-              "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\ContractManager.xaml.cs",
-              "RelativeDocumentMoniker": "WPF\\ContractManager.xaml.cs",
-              "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\ContractManager.xaml.cs",
-              "RelativeToolTip": "WPF\\ContractManager.xaml.cs",
-              "ViewState": "AgIAAGQAAAAAAAAAAAAkwH4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T04:49:10.364Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "MonthlyBillService.cs",
-              "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\Services\\MonthlyBillService.cs",
-              "RelativeDocumentMoniker": "Services\\MonthlyBillService.cs",
-              "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\Services\\MonthlyBillService.cs",
-              "RelativeToolTip": "Services\\MonthlyBillService.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAmwBsAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T15:35:03.87Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "TenantRepo.cs",
               "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\Repositories\\TenantRepo.cs",
               "RelativeDocumentMoniker": "Repositories\\TenantRepo.cs",
@@ -707,7 +736,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "AccountService.cs",
               "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\Services\\AccountService.cs",
               "RelativeDocumentMoniker": "Services\\AccountService.cs",
@@ -719,7 +748,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 38,
               "Title": "MonthlyBill.cs",
               "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\DataAccess\\Models\\MonthlyBill.cs",
               "RelativeDocumentMoniker": "DataAccess\\Models\\MonthlyBill.cs",
@@ -731,7 +760,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 39,
               "Title": "MonthlyBillDto.cs",
               "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\Repositories\\DTO\\MonthlyBillDto.cs",
               "RelativeDocumentMoniker": "Repositories\\DTO\\MonthlyBillDto.cs",
@@ -743,7 +772,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 40,
               "Title": "ContractDisplayDto.cs",
               "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\Repositories\\DTO\\ContractDisplayDto.cs",
               "RelativeDocumentMoniker": "Repositories\\DTO\\ContractDisplayDto.cs",
@@ -755,7 +784,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 41,
               "Title": "AccountRepo.cs",
               "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\Repositories\\AccountRepo.cs",
               "RelativeDocumentMoniker": "Repositories\\AccountRepo.cs",
@@ -767,7 +796,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 42,
               "Title": "Room.cs",
               "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\DataAccess\\Models\\Room.cs",
               "RelativeDocumentMoniker": "DataAccess\\Models\\Room.cs",
@@ -779,7 +808,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 44,
               "Title": "Tenant.cs",
               "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\DataAccess\\Models\\Tenant.cs",
               "RelativeDocumentMoniker": "DataAccess\\Models\\Tenant.cs",
@@ -791,7 +820,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 43,
               "Title": "TenantDisplayDto.cs",
               "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\Repositories\\DTO\\TenantDisplayDto.cs",
               "RelativeDocumentMoniker": "Repositories\\DTO\\TenantDisplayDto.cs",
@@ -803,7 +832,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 45,
               "Title": "RoomManagerContext.cs",
               "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\DataAccess\\Models\\RoomManagerContext.cs",
               "RelativeDocumentMoniker": "DataAccess\\Models\\RoomManagerContext.cs",
@@ -815,7 +844,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 46,
               "Title": "RoomTenant.cs",
               "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\DataAccess\\Models\\RoomTenant.cs",
               "RelativeDocumentMoniker": "DataAccess\\Models\\RoomTenant.cs",
@@ -827,7 +856,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 47,
               "Title": "Login.xaml",
               "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\Login.xaml",
               "RelativeDocumentMoniker": "WPF\\Login.xaml",
@@ -838,7 +867,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 48,
               "Title": "AccountDTO.cs",
               "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\Repositories\\DTO\\AccountDTO.cs",
               "RelativeDocumentMoniker": "Repositories\\DTO\\AccountDTO.cs",
@@ -850,7 +879,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 49,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\DataAccess\\appsettings.json",
               "RelativeDocumentMoniker": "DataAccess\\appsettings.json",
@@ -862,7 +891,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 50,
               "Title": "DataAccess.csproj",
               "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\DataAccess\\DataAccess.csproj",
               "RelativeDocumentMoniker": "DataAccess\\DataAccess.csproj",

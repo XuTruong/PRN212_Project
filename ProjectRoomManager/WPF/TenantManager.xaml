@@ -96,7 +96,7 @@
             <Button Content="Thêm" Width="100" Style="{StaticResource PrimaryButton}" Click="btnAdd_Click"/>
             <Button Content="Sửa" Width="100" Style="{StaticResource PrimaryButton}" Click="btnEdit_Click"/>
             <Button Content="Xoá" Width="100" Style="{StaticResource PrimaryButton}" Click="btnDelete_Click"/>
-            <TextBox x:Name="txtSearch" Width="150" Margin="10,0,0,0" />
+            <TextBox x:Name="txtSearch" Width="150" Margin="10,0,0,0" TextChanged="txtSearch_TextChanged" />
             <Button Content="Đang thuê" Width="120" Style="{StaticResource PrimaryButton}" Click="btnActiveOnly_Click"/>
             <Button Content="Ngừng thuê" Width="120" Style="{StaticResource PrimaryButton}" Click="btnInactiveOnly_Click"/>
             <Button Content="Hiện tất cả" Width="100" Style="{StaticResource PrimaryButton}" Click="btnShowAll_Click"/>

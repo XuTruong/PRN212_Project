@@ -1,16 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+﻿using System.Windows;
 using DataAccess.Models;
 using Services;
 
@@ -31,7 +19,7 @@ namespace WPF
         {
             roomService = new RoomService();
             InitializeComponent();
-            cbRoom.ItemsSource = roomService.GetRoomsWithActiveContracts();
+            cbRoom.ItemsSource = roomService.getAllRoomhaveStatus();
         }
 
         private void CreateBillButton_Click(object sender, RoutedEventArgs e)
@@ -101,9 +89,13 @@ namespace WPF
 
                 if (monthlyBillService.CheckExistRoomMonthCurrent(contractId, monthYear))
                 {
-                    decimal totalAmount = CalculateTotalAmount(
-                    electricityOld, electricityNew, electricityRate,
-                    waterOld, waterNew, waterRate, roomPrice);
+                    MessageBox.Show("Bạn đã thêm phòng này vào danh sách tháng này rồi.", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    return;
+                }
+
+                decimal totalAmount = CalculateTotalAmount(
+                electricityOld, electricityNew, electricityRate,
+                waterOld, waterNew, waterRate, roomPrice);
 
                 var bill = new MonthlyBill
                 {
@@ -124,13 +116,8 @@ namespace WPF
                 monthlyBillService.CreateBill(bill);
                 MessageBox.Show("Tạo hóa đơn thành công!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
                 this.Close();
-                } else
-                {
-                    MessageBox.Show("Bạn đã thêm phòng này vào danh sách tháng này rồi.", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Warning);
-                    return;
-                }
 
-                
+
             }
             catch (Exception ex)
             {

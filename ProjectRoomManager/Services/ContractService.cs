@@ -26,7 +26,7 @@ namespace Services
 
         public List<ContractDisplayDto> SearchContract(string key)
         {
-            return _repo.searchContract(key);
+            return _repo.SearchContract(key);
         }
 
         public List<ContractDisplayDto> GetAllActiveContracts()

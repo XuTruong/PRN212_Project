@@ -50,13 +50,8 @@ namespace WPF
 
         private void txtSearch_TextChanged(object sender, TextChangedEventArgs e)
         {
-            string keyword = txtSearch.Text.Trim().ToLower();
-            var result = tenantService.GetAllTenants()
-                          .Where(t => (t.FullName ?? "").ToLower().Contains(keyword)
-                                   || (t.PhoneNumber ?? "").Contains(keyword)
-                                   || (t.IdNumber ?? "").Contains(keyword))
-                          .ToList();
-            dgTenants.ItemsSource = result;
+            string keyword = txtSearch.Text.Trim();
+            dgTenants.ItemsSource = tenantService.SearchTenants(keyword);
         }
 
         private void btnActiveOnly_Click(object sender, RoutedEventArgs e)

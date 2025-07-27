@@ -1,4 +1,4 @@
-﻿using System.Windows;
+using System.Windows;
 using DataAccess.Models;
 using Services;
 
@@ -27,10 +27,9 @@ namespace WPF
 
         private void LoadRooms()
         {
-            var rooms = roomService.GetRoomsWithActiveContracts(); // Sử dụng hàm mới
+            var roomService = new RoomService(); // Bạn cần có RoomService
+            var rooms = roomService.GetAllRoomsHaveStatusOccupied(); // Trả về List<Room>
             cbRoom.ItemsSource = rooms;
-            cbRoom.DisplayMemberPath = "RoomName"; // Hiển thị tên phòng
-            cbRoom.SelectedValuePath = "RoomId";   // Giá trị là RoomId
         }
 
         private void LoadBillData()

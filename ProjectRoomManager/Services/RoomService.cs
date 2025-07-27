@@ -42,6 +42,11 @@ namespace Services
             RoomRepo.CreateRoom(room);
         }
 
+        public bool RoomExists(string roomName)
+        {
+            return RoomRepo.RoomExists(roomName);
+        }
+
         public void DeleteRoom(int roomId) { RoomRepo.DeleteRoom(roomId); }
 
         public List<Room> getAllRoomhaveStatus()
@@ -62,11 +67,6 @@ namespace Services
         public int GetRoomIdByContractId(int contractId)
         {
             return RoomRepo.GetRoomIdByContractId(contractId);
-        }
-
-        public List<Room> GetRoomsWithActiveContracts()
-        {
-            return RoomRepo.GetRoomsWithActiveContracts();
         }
     }
 }

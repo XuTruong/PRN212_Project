@@ -34,6 +34,11 @@ namespace Repositories
             _context.SaveChanges();
         }
 
+        public bool RoomExists(string roomName)
+        {
+            return _context.Rooms.Any(r => r.RoomName.ToLower() == roomName.ToLower());
+        }
+
         public void UpdateRoom(Room roomUpdate)
         {
             _context.Rooms.Update(roomUpdate);
@@ -60,16 +65,10 @@ namespace Repositories
         // search by RoomName and Status (available, booked, etc.)
         public List<Room> SearchRooms(string roomName)
         {
-            List<Room> searchRoom = new List<Room>();
-
-            foreach (var r in GetAllRooms())
-            {
-                if (r.RoomName.ToLower().Contains(roomName.ToLower()))
-                {
-                    searchRoom.Add(r);
-                }
-            }
-            return searchRoom;
+            string searchTerm = roomName.ToLower();
+            return _context.Rooms
+                .Where(r => r.RoomName.ToLower().Contains(searchTerm))
+                .ToList();
         }
 
         public bool IsRoomAvailable(int roomId)
@@ -85,7 +84,7 @@ namespace Repositories
         public void UpdateAfterHaveContract(int roomId)
         {
             var room = _context.Rooms.FirstOrDefault(r => r.RoomId == roomId);
-            room.Status = "Trống";
+            room.Status = "Đang thuê";
             _context.SaveChanges();
         }
 

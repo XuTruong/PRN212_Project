@@ -104,16 +104,7 @@ namespace Repositories
 
         public bool CheckExistRoomMonthCurrent(int contractId, string monthYear)
         {
-            var list = _context.MonthlyBills.Where(mb => mb.MonthYear == monthYear).ToList();
-
-            foreach (var b in list)
-            {
-                if (b.ContractId == contractId)
-                {
-                    return false;
-                }
-            }
-            return true;
+            return _context.MonthlyBills.Any(mb => mb.ContractId == contractId && mb.MonthYear == monthYear);
         }
 
         public MonthlyBill? GetMonthlyBillById(int _billId)

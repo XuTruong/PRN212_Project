@@ -1,5 +1,4 @@
-﻿using System.Reflection.Metadata.Ecma335;
-using DataAccess.Models;
+﻿using DataAccess.Models;
 using Microsoft.EntityFrameworkCore;
 using Repositories.DTO;
 
@@ -124,20 +123,53 @@ namespace Repositories
             return result;
         }
 
-        public List<ContractDisplayDto> searchContract(String keyword)
+        public List<ContractDisplayDto> SearchContract(string keyword)
         {
-            List<ContractDisplayDto> res = new List<ContractDisplayDto>();
-
-            foreach (var c in GetAllContracts())
+            if (string.IsNullOrWhiteSpace(keyword))
             {
-                if (c.RoomName.ToLower().Contains(keyword.ToLower()) || c.MainTenantName.ToLower().Contains(keyword.ToLower())
-                    || c.Roommates.ToLower().Contains(keyword.ToLower()))
-                {
-                    res.Add(c);
-                }
+                return GetAllContracts();
             }
 
-            return res;
+            var lowerKeyword = keyword.ToLower();
+
+            var contracts = _context.Contracts
+                .Include(c => c.Room)
+                .Include(c => c.Tenant)
+                .Include(c => c.RoomTenants)
+                    .ThenInclude(rt => rt.Tenant)
+                .Where(c =>
+                    (c.Room.RoomName != null && c.Room.RoomName.ToLower().Contains(lowerKeyword)) ||
+                    (c.Tenant.FullName != null && c.Tenant.FullName.ToLower().Contains(lowerKeyword)) ||
+                    (c.Tenant.IdNumber != null && c.Tenant.IdNumber.Contains(lowerKeyword)) ||
+                    c.RoomTenants.Any(rt =>
+                        (rt.Tenant.FullName != null && rt.Tenant.FullName.ToLower().Contains(lowerKeyword)) ||
+                        (rt.Tenant.IdNumber != null && rt.Tenant.IdNumber.Contains(lowerKeyword))
+                    )
+                )
+                .ToList();
+
+            var result = contracts.Select(c => new ContractDisplayDto
+            {
+                ContractId = c.ContractId,
+                RoomName = c.Room?.RoomName,
+                MainTenantName = c.Tenant?.FullName + " - " + c.Tenant?.IdNumber,
+                Roommates = string.Join("\n",
+                    c.RoomTenants
+                        .Where(rt => rt.TenantId != c.TenantId)
+                        .Select(rt => rt.Tenant?.FullName + " - " + rt.Tenant?.IdNumber)
+                        .Where(name => !string.IsNullOrEmpty(name))
+                ),
+                TenantIdRoomate = c.RoomTenants
+                    .Where(rt => rt.TenantId.HasValue && rt.TenantId != c.TenantId)
+                    .Select(rt => rt.TenantId!.Value)
+                    .ToList(),
+                StartDate = c.StartDate ?? default,
+                EndDate = c.EndDate ?? default,
+                Deposit = c.Deposit ?? 0,
+                Note = c.Note ?? ""
+            }).ToList();
+
+            return result;
         }
 
         public void createContract(Contract contract, int roomId)
@@ -170,7 +202,7 @@ namespace Repositories
             var contract = _context.Contracts.FirstOrDefault(c => c.ContractId == contractId);
             contract.IsActive = false;
             var room = _context.Rooms.FirstOrDefault(r => r.RoomName.Equals(roomName));
-            room.Status = "Available";
+            room.Status = "Trống";
             _context.SaveChanges();
         }
 

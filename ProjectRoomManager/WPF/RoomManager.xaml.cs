@@ -27,15 +27,8 @@ namespace WPF
                 txtArea.Text = selected.Area.ToString();
                 txtPrice.Text = selected.Price.ToString();
 
-                string displayStatus = selected.Status switch
-                {
-                    "Trống" => "Available",
-                    "Đang thuê" => "Occupied",
-                    _ => ""
-                };
-
                 cmbStatus.SelectedItem = cmbStatus.Items.Cast<ComboBoxItem>()
-                    .FirstOrDefault(i => i.Content.ToString() == displayStatus);
+                    .FirstOrDefault(i => i.Content.ToString() == selected.Status);
             }
         }
 
@@ -80,18 +73,10 @@ namespace WPF
 
             if (dgRooms.SelectedItem is Room selected)
             {
-                string uiStatus = (cmbStatus.SelectedItem as ComboBoxItem).Content.ToString();
-                string dbStatus = uiStatus switch
-                {
-                    "Available" => "Trống",
-                    "Occupied" => "Đang thuê",
-                    _ => ""
-                };
-
                 selected.RoomName = txtRoomName.Text.Trim();
                 selected.Area = area;
                 selected.Price = price;
-                selected.Status = dbStatus;
+                selected.Status = (cmbStatus.SelectedItem as ComboBoxItem).Content.ToString();
                 roomService.UpdateRoom(selected);
                 dgRooms.ItemsSource = roomService.GetAllRooms();
                 ClearInputs();
@@ -104,6 +89,7 @@ namespace WPF
 
         private void btnAdd_Click(object sender, RoutedEventArgs e)
         {
+            roomService = new RoomService();
             if (string.IsNullOrWhiteSpace(txtRoomName.Text) ||
                 string.IsNullOrWhiteSpace(txtArea.Text) ||
                 string.IsNullOrWhiteSpace(txtPrice.Text) ||
@@ -120,20 +106,19 @@ namespace WPF
                 return;
             }
 
-            string uiStatus = (cmbStatus.SelectedItem as ComboBoxItem).Content.ToString();
-            string dbStatus = uiStatus switch
+            string roomName = txtRoomName.Text.Trim();
+            if (roomService.RoomExists(roomName))
             {
-                "Available" => "Trống",
-                "Occupied" => "Đang thuê",
-                _ => "Trống" // Default to Available
-            };
+                MessageBox.Show("Tên phòng đã tồn tại. Vui lòng chọn tên khác.", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
 
             Room newRoom = new Room
             {
-                RoomName = txtRoomName.Text.Trim(),
+                RoomName = roomName,
                 Area = area,
                 Price = price,
-                Status = dbStatus
+                Status = (cmbStatus.SelectedItem as ComboBoxItem).Content.ToString()
             };
 
             roomService.CreateRoom(newRoom);

@@ -20,7 +20,7 @@ namespace WPF
             InitializeComponent();
 
             // Đổ dữ liệu vào combobox phòng và người thuê chính
-            cbRoom.ItemsSource = roomService.getAllRoomhaveStatus();  // Danh sách phòng trống
+            cbRoom.ItemsSource = roomService.GetAllRoomsHaveStatusOccupied();  // Danh sách phòng trống
             cbMainTenant.ItemsSource = tenantService.GetTenantDisplayDtos();  // Danh sách người thuê
         }
 

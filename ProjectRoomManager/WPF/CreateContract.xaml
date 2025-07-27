@@ -43,7 +43,7 @@
 
                     <!-- Ghi chú -->
                     <TextBlock Text="Ghi chú:" Grid.Row="5" Grid.Column="0" VerticalAlignment="Top" Margin="0,10,0,0"/>
-                    <TextBox x:Name="txtNote" Grid.Row="5" Grid.Column="1" Height="60" IsReadOnly="True" TextWrapping="Wrap" AcceptsReturn="True" Margin="114,5,0,5" Background="#f4f4f4"/>
+                    <TextBox x:Name="txtNote" Grid.Row="5" Grid.Column="1" Height="60" TextWrapping="Wrap" AcceptsReturn="True" Margin="114,5,0,5" Background="#f4f4f4"/>
                 </Grid>
 
                 <!-- Nút -->

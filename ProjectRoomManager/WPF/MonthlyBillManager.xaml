@@ -57,7 +57,8 @@
                     <Style TargetType="DataGridRow">
                         <Style.Triggers>
                             <DataTrigger Binding="{Binding IsPaid}" Value="False">
-                                <Setter Property="Background" Value="#FFEBEE"/>
+                                <Setter Property="Foreground" Value="Red"/>
+                                <Setter Property="FontWeight" Value="Bold"/>
                             </DataTrigger>
                         </Style.Triggers>
                     </Style>
