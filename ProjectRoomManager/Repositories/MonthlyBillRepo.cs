@@ -5,7 +5,7 @@ namespace Repositories
 {
     public class MonthlyBillRepo
     {
-        private RoomManagerContext _context;
+        private readonly RoomManagerContext _context;
 
         public MonthlyBillRepo()
         {
@@ -49,8 +49,8 @@ namespace Repositories
                     select new MonthlyBillDto
                     {
                         BillId = b.BillId,
-                        RoomName = r.RoomName,
-                        MonthYear = b.MonthYear,
+                        RoomName = r.RoomName ?? "",
+                        MonthYear = b.MonthYear ?? "",
                         ElectricityOld = b.ElectricityOld ?? 0,
                         ElectricityNew = b.ElectricityNew ?? 0,
                         WaterOld = b.WaterOld ?? 0,
@@ -71,12 +71,12 @@ namespace Repositories
             return (from b in _context.Set<MonthlyBill>()
                     join c in _context.Set<Contract>() on b.ContractId equals c.ContractId
                     join r in _context.Set<Room>() on c.RoomId equals r.RoomId
-                    where b.MonthYear.Equals(ex)
+                    where b.MonthYear == ex
                     select new MonthlyBillDto
                     {
                         BillId = b.BillId,
-                        RoomName = r.RoomName,
-                        MonthYear = b.MonthYear,
+                        RoomName = r.RoomName ?? "",
+                        MonthYear = b.MonthYear ?? "",
                         ElectricityOld = b.ElectricityOld ?? 0,
                         ElectricityNew = b.ElectricityNew ?? 0,
                         WaterOld = b.WaterOld ?? 0,
@@ -102,9 +102,9 @@ namespace Repositories
             _context.SaveChanges();
         }
 
-        public bool checkExistRoomMonthCurrent(int contractId, string monthYear)
+        public bool CheckExistRoomMonthCurrent(int contractId, string monthYear)
         {
-            var list = _context.MonthlyBills.Where(mb => mb.MonthYear.Equals(monthYear)).ToList();
+            var list = _context.MonthlyBills.Where(mb => mb.MonthYear == monthYear).ToList();
 
             foreach (var b in list)
             {
@@ -116,7 +116,7 @@ namespace Repositories
             return true;
         }
 
-        public MonthlyBill GetMonthlyBillById(int _billId)
+        public MonthlyBill? GetMonthlyBillById(int _billId)
         {
             return _context.MonthlyBills.FirstOrDefault(mb => mb.BillId == _billId);
         }

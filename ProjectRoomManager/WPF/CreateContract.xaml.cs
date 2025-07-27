@@ -21,7 +21,7 @@ namespace WPF
 
             // Đổ dữ liệu vào combobox phòng và người thuê chính
             cbRoom.ItemsSource = roomService.getAllRoomhaveStatus();  // Danh sách phòng trống
-            cbMainTenant.ItemsSource = tenantService.getTenantDto();  // Danh sách người thuê
+            cbMainTenant.ItemsSource = tenantService.GetTenantDisplayDtos();  // Danh sách người thuê
         }
 
         private void btnCreateContract_Click(object sender, RoutedEventArgs e)

@@ -99,9 +99,9 @@ namespace WPF
                     return;
                 }
 
-                if (monthlyBillService.checkExistRoomMonthCurrent(contractId, monthYear))
+                if (monthlyBillService.CheckExistRoomMonthCurrent(contractId, monthYear))
                 {
-decimal totalAmount = CalculateTotalAmount(
+                    decimal totalAmount = CalculateTotalAmount(
                     electricityOld, electricityNew, electricityRate,
                     waterOld, waterNew, waterRate, roomPrice);
 

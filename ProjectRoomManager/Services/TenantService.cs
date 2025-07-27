@@ -12,7 +12,7 @@ namespace Services
 {
     public class TenantService
     {
-        TenantRepo tenantRepo;
+        private readonly TenantRepo tenantRepo;
 
         public TenantService()
         {
@@ -37,22 +37,22 @@ namespace Services
         public void UpdateTenant(Tenant tenantUpdate)
         {
             if (tenantUpdate == null)
-                throw new ArgumentNullException(nameof(tenantUpdate), "Tenant cannot be null.");
+                throw new ArgumentNullException(nameof(tenantUpdate));
             if (string.IsNullOrWhiteSpace(tenantUpdate.FullName))
-                throw new ArgumentException("Full name is required.", nameof(tenantUpdate.FullName));
+                throw new ArgumentException("Full name is required.", nameof(tenantUpdate));
             if (string.IsNullOrWhiteSpace(tenantUpdate.PhoneNumber))
-                throw new ArgumentException("Phone number is required.", nameof(tenantUpdate.PhoneNumber));
+                throw new ArgumentException("Phone number is required.", nameof(tenantUpdate));
             tenantRepo.UpdateTenant(tenantUpdate);
         }
 
         public void CreateTenant(Tenant tenant)
         {
             if (tenant == null)
-                throw new ArgumentNullException(nameof(tenant), "Tenant cannot be null.");
+                throw new ArgumentNullException(nameof(tenant));
             if (string.IsNullOrWhiteSpace(tenant.FullName))
-                throw new ArgumentException("Full name is required.", nameof(tenant.FullName));
+                throw new ArgumentException("Full name is required.", nameof(tenant));
             if (string.IsNullOrWhiteSpace(tenant.PhoneNumber))
-                throw new ArgumentException("Phone number is required.", nameof(tenant.PhoneNumber));
+                throw new ArgumentException("Phone number is required.", nameof(tenant));
             tenantRepo.CreateTenant(tenant);
         }
 
@@ -63,7 +63,12 @@ namespace Services
             tenantRepo.DeleteTenant(tenantId);
         }
 
-        public List<TenantDisplayDto> getTenantDto()
+        public List<Tenant> SearchTenants(string keyword)
+        {
+            return tenantRepo.SearchTenants(keyword);
+        }
+
+        public List<TenantDisplayDto> GetTenantDisplayDtos()
         {
             return tenantRepo.GetTenantDto();
         }

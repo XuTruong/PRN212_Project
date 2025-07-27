@@ -1,8 +1,1 @@
-<Window x:Class="WPF.TenantManager"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="TenantManager" Height="450" Width="800">
-    <Grid>
-        <TextBlock Text="Test"/>
-    </Grid>
-</Window>
+<!-- This file has been intentionally cleared to resolve a build conflict. -->

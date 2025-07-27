@@ -33,12 +33,12 @@ namespace Services
             return _repo.GetMonthlyBillsByEx(ex);
         }
 
-        public bool checkExistRoomMonthCurrent(int contractId, string monthYear)
+        public bool CheckExistRoomMonthCurrent(int contractId, string monthYear)
         {
-            return _repo.checkExistRoomMonthCurrent(contractId, monthYear);
+            return _repo.CheckExistRoomMonthCurrent(contractId, monthYear);
         }
 
-        public MonthlyBill GetMonthlyBillById(int _billId)
+        public MonthlyBill? GetMonthlyBillById(int _billId)
         {
             return _repo.GetMonthlyBillById(_billId);
         }

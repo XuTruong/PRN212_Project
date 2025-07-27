@@ -63,6 +63,22 @@ namespace Repositories
                            .ToList();
         }
 
+        public List<Tenant> SearchTenants(string keyword)
+        {
+            if (string.IsNullOrWhiteSpace(keyword))
+            {
+                return GetAllTenants();
+            }
+
+            var lowerKeyword = keyword.ToLower();
+
+            return _context.Tenants
+                .Where(t => t.FullName.ToLower().Contains(lowerKeyword) ||
+                            t.PhoneNumber.Contains(lowerKeyword) ||
+                            t.IdNumber.Contains(lowerKeyword))
+                .ToList();
+        }
+
 
         public List<TenantDisplayDto> GetTenantDto()
         {

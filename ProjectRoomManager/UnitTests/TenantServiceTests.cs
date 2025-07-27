@@ -58,7 +58,7 @@ namespace UnitTests
             Assert.IsType<List<Tenant>>(result);
             
             // Kiểm tra tất cả tenant đều active
-            if (result.Any())
+            if (result.Count > 0)
             {
                 Assert.True(result.All(t => t.IsActive == true));
             }
@@ -75,7 +75,7 @@ namespace UnitTests
             Assert.IsType<List<Tenant>>(result);
             
             // Kiểm tra tất cả tenant đều inactive
-            if (result.Any())
+            if (result.Count > 0)
             {
                 Assert.True(result.All(t => t.IsActive == false));
             }
@@ -97,12 +97,12 @@ namespace UnitTests
             if (!string.IsNullOrEmpty(keyword))
             {
                 // Kiểm tra kết quả có chứa keyword (nếu có dữ liệu)
-                if (result.Any())
+                if (result.Count > 0)
                 {
-                    Assert.True(result.All(t => 
-                        t.FullName.Contains(keyword, StringComparison.OrdinalIgnoreCase) ||
-                        t.PhoneNumber.Contains(keyword, StringComparison.OrdinalIgnoreCase) ||
-                        t.IdNumber.Contains(keyword, StringComparison.OrdinalIgnoreCase)));
+                    Assert.True(result.All(t =>
+                        (t.FullName ?? "").Contains(keyword, StringComparison.OrdinalIgnoreCase) ||
+                        (t.PhoneNumber ?? "").Contains(keyword, StringComparison.OrdinalIgnoreCase) ||
+                        (t.IdNumber ?? "").Contains(keyword, StringComparison.OrdinalIgnoreCase)));
                 }
             }
         }

@@ -26,8 +26,16 @@ namespace WPF
                 txtRoomName.Text = selected.RoomName;
                 txtArea.Text = selected.Area.ToString();
                 txtPrice.Text = selected.Price.ToString();
+
+                string displayStatus = selected.Status switch
+                {
+                    "Trống" => "Available",
+                    "Đang thuê" => "Occupied",
+                    _ => ""
+                };
+
                 cmbStatus.SelectedItem = cmbStatus.Items.Cast<ComboBoxItem>()
-                    .FirstOrDefault(i => i.Content.ToString() == selected.Status);
+                    .FirstOrDefault(i => i.Content.ToString() == displayStatus);
             }
         }
 
@@ -72,10 +80,18 @@ namespace WPF
 
             if (dgRooms.SelectedItem is Room selected)
             {
+                string uiStatus = (cmbStatus.SelectedItem as ComboBoxItem).Content.ToString();
+                string dbStatus = uiStatus switch
+                {
+                    "Available" => "Trống",
+                    "Occupied" => "Đang thuê",
+                    _ => ""
+                };
+
                 selected.RoomName = txtRoomName.Text.Trim();
                 selected.Area = area;
                 selected.Price = price;
-                selected.Status = (cmbStatus.SelectedItem as ComboBoxItem).Content.ToString();
+                selected.Status = dbStatus;
                 roomService.UpdateRoom(selected);
                 dgRooms.ItemsSource = roomService.GetAllRooms();
                 ClearInputs();
@@ -104,12 +120,20 @@ namespace WPF
                 return;
             }
 
+            string uiStatus = (cmbStatus.SelectedItem as ComboBoxItem).Content.ToString();
+            string dbStatus = uiStatus switch
+            {
+                "Available" => "Trống",
+                "Occupied" => "Đang thuê",
+                _ => "Trống" // Default to Available
+            };
+
             Room newRoom = new Room
             {
                 RoomName = txtRoomName.Text.Trim(),
                 Area = area,
                 Price = price,
-                Status = (cmbStatus.SelectedItem as ComboBoxItem).Content.ToString()
+                Status = dbStatus
             };
 
             roomService.CreateRoom(newRoom);

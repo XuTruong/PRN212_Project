@@ -20,7 +20,7 @@ namespace WPF
             tenantService = new TenantService();
             var contracts = contractService.GetAllActiveContracts();
             dgContracts.ItemsSource = contracts;
-            cbOtherTenants.ItemsSource = tenantService.getTenantDto();
+            cbOtherTenants.ItemsSource = tenantService.GetTenantDisplayDtos();
         }
 
         private void AddRoommate_Click(object sender, RoutedEventArgs e)

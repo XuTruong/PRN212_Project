@@ -33,8 +33,15 @@ namespace WPF
                     : null;
 
                 // Thiết lập giới tính
-                cmbGender.SelectedItem = cmbGender.Items.Cast<ComboBoxItem>()
-                    .FirstOrDefault(i => i.Content.ToString().Trim() == selected.Gender);
+                if (selected.Gender != null)
+                {
+                    cmbGender.SelectedItem = cmbGender.Items.Cast<ComboBoxItem>()
+                        .FirstOrDefault(i => i.Content.ToString().Trim() == selected.Gender);
+                }
+                else
+                {
+                    cmbGender.SelectedItem = null;
+                }
 
                 // Thiết lập trạng thái
                 chkIsActive.IsChecked = selected.IsActive;
@@ -45,9 +52,9 @@ namespace WPF
         {
             string keyword = txtSearch.Text.Trim().ToLower();
             var result = tenantService.GetAllTenants()
-                          .Where(t => t.FullName.ToLower().Contains(keyword)
-                                   || t.PhoneNumber.Contains(keyword)
-                                   || t.IdNumber.Contains(keyword))
+                          .Where(t => (t.FullName ?? "").ToLower().Contains(keyword)
+                                   || (t.PhoneNumber ?? "").Contains(keyword)
+                                   || (t.IdNumber ?? "").Contains(keyword))
                           .ToList();
             dgTenants.ItemsSource = result;
         }

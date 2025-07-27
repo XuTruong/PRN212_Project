@@ -16,4 +16,11 @@
     <ProjectReference Include="..\Services\Services.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Page Remove="RoomManager_New.xaml" />
+    <None Include="RoomManager_New.xaml" />
+    <Page Remove="TenantManagerTest.xaml" />
+    <None Include="TenantManagerTest.xaml" />
+  </ItemGroup>
+
 </Project>
