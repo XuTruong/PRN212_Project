@@ -15,13 +15,13 @@ namespace Repositories
 
         public List<RevenueReportDto> GetRevenueReport(DateTime fromDate, DateTime toDate)
         {
-            var fromMonthYear = fromDate.ToString("MM/yyyy");
-            var toMonthYear = toDate.ToString("MM/yyyy");
+            var fromMonthYear = fromDate.ToString("yyyy-MM");
+            var toMonthYear = toDate.ToString("yyyy-MM");
 
             var bills = _context.MonthlyBills
                 .Include(b => b.Contract)
                 .ThenInclude(c => c!.Room)
-                .Where(b => string.Compare(b.MonthYear, fromMonthYear) >= 0 && 
+                .Where(b => string.Compare(b.MonthYear, fromMonthYear) >= 0 &&
                            string.Compare(b.MonthYear, toMonthYear) <= 0)
                 .ToList();
 
@@ -45,8 +45,8 @@ namespace Repositories
 
         public List<RoomReportDto> GetRoomReport(DateTime fromDate, DateTime toDate)
         {
-            var fromMonthYear = fromDate.ToString("MM/yyyy");
-            var toMonthYear = toDate.ToString("MM/yyyy");
+            var fromMonthYear = fromDate.ToString("yyyy-MM");
+            var toMonthYear = toDate.ToString("yyyy-MM");
 
             var roomReport = _context.MonthlyBills
                 .Include(b => b.Contract)
@@ -54,7 +54,7 @@ namespace Repositories
                 .Include(b => b.Contract)
                 .ThenInclude(c => c!.RoomTenants)
                 .ThenInclude(rt => rt.Tenant)
-                .Where(b => string.Compare(b.MonthYear, fromMonthYear) >= 0 && 
+                .Where(b => string.Compare(b.MonthYear, fromMonthYear) >= 0 &&
                            string.Compare(b.MonthYear, toMonthYear) <= 0)
                 .Select(b => new RoomReportDto
                 {
@@ -80,8 +80,8 @@ namespace Repositories
 
         public List<PaymentReportDto> GetPaymentReport(DateTime fromDate, DateTime toDate)
         {
-            var fromMonthYear = fromDate.ToString("MM/yyyy");
-            var toMonthYear = toDate.ToString("MM/yyyy");
+            var fromMonthYear = fromDate.ToString("yyyy-MM");
+            var toMonthYear = toDate.ToString("yyyy-MM");
 
             var paymentReport = _context.MonthlyBills
                 .Include(b => b.Contract)
@@ -89,7 +89,7 @@ namespace Repositories
                 .Include(b => b.Contract)
                 .ThenInclude(c => c!.RoomTenants)
                 .ThenInclude(rt => rt.Tenant)
-                .Where(b => string.Compare(b.MonthYear, fromMonthYear) >= 0 && 
+                .Where(b => string.Compare(b.MonthYear, fromMonthYear) >= 0 &&
                            string.Compare(b.MonthYear, toMonthYear) <= 0)
                 .Select(b => new PaymentReportDto
                 {
@@ -100,10 +100,10 @@ namespace Repositories
                     TotalAmount = b.TotalAmount ?? 0,
                     IsPaid = b.IsPaid ?? false,
                     PaymentDate = b.PaymentDate,
-                    DaysOverdue = b.IsPaid == false ? 
-                        (DateTime.Now - DateTime.ParseExact(b.MonthYear + "/01", "MM/yyyy/dd", null).AddMonths(1)).Days : 0,
-                    Status = b.IsPaid == true ? "Đã thanh toán" : 
-                            (DateTime.Now - DateTime.ParseExact(b.MonthYear + "/01", "MM/yyyy/dd", null).AddMonths(1)).Days > 0 ? 
+                    DaysOverdue = b.IsPaid == false ?
+                        (DateTime.Now - DateTime.ParseExact(b.MonthYear + "/01", "yyyy-MM-dd", null).AddMonths(1)).Days : 0,
+                    Status = b.IsPaid == true ? "Đã thanh toán" :
+                            (DateTime.Now - DateTime.ParseExact(b.MonthYear + "/01", "yyyy-MM-dd", null).AddMonths(1)).Days > 0 ?
                             "Quá hạn" : "Chưa đến hạn"
                 })
                 .OrderBy(r => r.MonthYear)
@@ -115,13 +115,13 @@ namespace Repositories
 
         public List<UtilityReportDto> GetUtilityReport(DateTime fromDate, DateTime toDate)
         {
-            var fromMonthYear = fromDate.ToString("MM/yyyy");
-            var toMonthYear = toDate.ToString("MM/yyyy");
+            var fromMonthYear = fromDate.ToString("yyyy-MM");
+            var toMonthYear = toDate.ToString("yyyy-MM");
 
             var utilityReport = _context.MonthlyBills
                 .Include(b => b.Contract)
                 .ThenInclude(c => c!.Room)
-                .Where(b => string.Compare(b.MonthYear, fromMonthYear) >= 0 && 
+                .Where(b => string.Compare(b.MonthYear, fromMonthYear) >= 0 &&
                            string.Compare(b.MonthYear, toMonthYear) <= 0)
                 .Select(b => new UtilityReportDto
                 {

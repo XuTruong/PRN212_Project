@@ -91,53 +91,65 @@ namespace WPF
 
         private void LoadRevenueReport(DateTime fromDate, DateTime toDate)
         {
-            var data = _reportService.GetRevenueReport(fromDate, toDate);
+            try
+            {
+                var data = _reportService.GetRevenueReport(fromDate, toDate);
+                
+                // Debug output
+                MessageBox.Show($"Tìm thấy {data.Count} dòng dữ liệu báo cáo doanh thu\nKhoảng thời gian: {fromDate:yyyy-MM} đến {toDate:yyyy-MM}", 
+                    "Debug", MessageBoxButton.OK, MessageBoxImage.Information);
 
-            // Define columns for Revenue Report
-            dgReport.Columns.Add(new DataGridTextColumn
-            {
-                Header = "Tháng/Năm",
-                Binding = new Binding("MonthYear"),
-                Width = new DataGridLength(120)
-            });
-            dgReport.Columns.Add(new DataGridTextColumn
-            {
-                Header = "Tổng Doanh thu",
-                Binding = new Binding("TotalRevenue") { StringFormat = "{0:N0} VNĐ" },
-                Width = new DataGridLength(150)
-            });
-            dgReport.Columns.Add(new DataGridTextColumn
-            {
-                Header = "Tổng HĐ",
-                Binding = new Binding("TotalBills"),
-                Width = new DataGridLength(80)
-            });
-            dgReport.Columns.Add(new DataGridTextColumn
-            {
-                Header = "Đã TT",
-                Binding = new Binding("PaidBills"),
-                Width = new DataGridLength(80)
-            });
-            dgReport.Columns.Add(new DataGridTextColumn
-            {
-                Header = "Chưa TT",
-                Binding = new Binding("UnpaidBills"),
-                Width = new DataGridLength(80)
-            });
-            dgReport.Columns.Add(new DataGridTextColumn
-            {
-                Header = "Đã thu",
-                Binding = new Binding("PaidAmount") { StringFormat = "{0:N0} VNĐ" },
-                Width = new DataGridLength(150)
-            });
-            dgReport.Columns.Add(new DataGridTextColumn
-            {
-                Header = "Chưa thu",
-                Binding = new Binding("UnpaidAmount") { StringFormat = "{0:N0} VNĐ" },
-                Width = new DataGridLength(150)
-            });
+                // Define columns for Revenue Report
+                dgReport.Columns.Add(new DataGridTextColumn
+                {
+                    Header = "Tháng/Năm",
+                    Binding = new Binding("MonthYear"),
+                    Width = new DataGridLength(120)
+                });
+                dgReport.Columns.Add(new DataGridTextColumn
+                {
+                    Header = "Tổng Doanh thu",
+                    Binding = new Binding("TotalRevenue") { StringFormat = "{0:N0} VNĐ" },
+                    Width = new DataGridLength(150)
+                });
+                dgReport.Columns.Add(new DataGridTextColumn
+                {
+                    Header = "Tổng HĐ",
+                    Binding = new Binding("TotalBills"),
+                    Width = new DataGridLength(80)
+                });
+                dgReport.Columns.Add(new DataGridTextColumn
+                {
+                    Header = "Đã TT",
+                    Binding = new Binding("PaidBills"),
+                    Width = new DataGridLength(80)
+                });
+                dgReport.Columns.Add(new DataGridTextColumn
+                {
+                    Header = "Chưa TT",
+                    Binding = new Binding("UnpaidBills"),
+                    Width = new DataGridLength(80)
+                });
+                dgReport.Columns.Add(new DataGridTextColumn
+                {
+                    Header = "Đã thu",
+                    Binding = new Binding("PaidAmount") { StringFormat = "{0:N0} VNĐ" },
+                    Width = new DataGridLength(150)
+                });
+                dgReport.Columns.Add(new DataGridTextColumn
+                {
+                    Header = "Chưa thu",
+                    Binding = new Binding("UnpaidAmount") { StringFormat = "{0:N0} VNĐ" },
+                    Width = new DataGridLength(150)
+                });
 
-            dgReport.ItemsSource = data;
+                dgReport.ItemsSource = data;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi khi tải báo cáo doanh thu: {ex.Message}\n\nStack trace: {ex.StackTrace}", 
+                    "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
 
         private void LoadRoomReport(DateTime fromDate, DateTime toDate)
@@ -229,7 +241,7 @@ namespace WPF
             dgReport.Columns.Add(new DataGridTextColumn
             {
                 Header = "Số tiền",
-                Binding = new Binding("TotalAmount") { StringFormat = "{0:N0}" },
+                Binding = new Binding("TotalAmount") { StringFormat = "{0:N0} VNĐ" },
                 Width = new DataGridLength(120)
             });
             dgReport.Columns.Add(new DataGridTextColumn
@@ -240,9 +252,9 @@ namespace WPF
             });
             dgReport.Columns.Add(new DataGridTextColumn
             {
-                Header = "Quá hạn",
+                Header = "Quá hạn (ngày)",
                 Binding = new Binding("DaysOverdue"),
-                Width = new DataGridLength(80)
+                Width = new DataGridLength(100)
             });
             dgReport.Columns.Add(new DataGridTextColumn
             {
