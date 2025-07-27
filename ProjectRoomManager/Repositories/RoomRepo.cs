@@ -13,39 +13,39 @@ namespace Repositories
         }
 
         // CRUD
-        public List<Room> GetAllRooms()
+        public virtual List<Room> GetAllRooms()
         {
             return _context.Rooms.ToList();
         }
 
-        public List<Room> GetAllRoomsHaveStatus()
+        public virtual List<Room> GetAllRoomsHaveStatus()
         {
             return _context.Rooms.Where(r => r.Status.Equals("Đang thuê")).ToList();
         }
 
-        public List<Room> GetAllRoomsHaveStatusOccupied()
+        public virtual List<Room> GetAllRoomsHaveStatusOccupied()
         {
             return _context.Rooms.Where(r => r.Status.Equals("Trống")).ToList();
         }
 
-        public void CreateRoom(Room room)
+        public virtual void CreateRoom(Room room)
         {
             _context.Rooms.Add(room);
             _context.SaveChanges();
         }
 
-        public bool RoomExists(string roomName)
+        public virtual bool RoomExists(string roomName)
         {
             return _context.Rooms.Any(r => r.RoomName.ToLower() == roomName.ToLower());
         }
 
-        public void UpdateRoom(Room roomUpdate)
+        public virtual void UpdateRoom(Room roomUpdate)
         {
             _context.Rooms.Update(roomUpdate);
             _context.SaveChanges();
         }
 
-        public void DeleteRoom(int roomId)
+        public virtual void DeleteRoom(int roomId)
         {
             var room = _context.Rooms
                 .Include(r => r.Contracts)
@@ -63,7 +63,7 @@ namespace Repositories
 
 
         // search by RoomName and Status (available, booked, etc.)
-        public List<Room> SearchRooms(string roomName)
+        public virtual List<Room> SearchRooms(string roomName)
         {
             string searchTerm = roomName.ToLower();
             return _context.Rooms
@@ -71,7 +71,7 @@ namespace Repositories
                 .ToList();
         }
 
-        public bool IsRoomAvailable(int roomId)
+        public virtual bool IsRoomAvailable(int roomId)
         {
             var room = _context.Rooms.Find(roomId);
             if (room != null)
@@ -81,26 +81,26 @@ namespace Repositories
             return false;
         }
 
-        public void UpdateAfterHaveContract(int roomId)
+        public virtual void UpdateAfterHaveContract(int roomId)
         {
             var room = _context.Rooms.FirstOrDefault(r => r.RoomId == roomId);
             room.Status = "Đang thuê";
             _context.SaveChanges();
         }
 
-        public decimal GetCurrentRoomPrice(int roomId)
+        public virtual decimal GetCurrentRoomPrice(int roomId)
         {
             Room room = _context.Rooms.FirstOrDefault(r => r.RoomId == roomId);
             return (decimal)(room != null ? room.Price : 0);
         }
 
-        public int GetRoomIdByContractId(int contractId)
+        public virtual int GetRoomIdByContractId(int contractId)
         {
             Contract con = _context.Contracts.FirstOrDefault(c => c.ContractId == contractId);
             return (int)con.RoomId;
         }
 
-        public List<Room> GetRoomsWithActiveContracts()
+        public virtual List<Room> GetRoomsWithActiveContracts()
         {
             return _context.Rooms
                 .Where(r => _context.Contracts

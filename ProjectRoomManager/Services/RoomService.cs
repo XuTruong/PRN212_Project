@@ -16,6 +16,10 @@ namespace Services
         {
             RoomRepo = new RoomRepo();
         }
+        public RoomService(RoomRepo roomRepo)
+        {
+            this.RoomRepo = roomRepo;
+        }
 
         public List<Room> GetAllRooms()
         {
