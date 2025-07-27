@@ -28,7 +28,7 @@ namespace WPF
         private void LoadRooms()
         {
             var roomService = new RoomService(); // Bạn cần có RoomService
-            var rooms = roomService.GetAllRoomsHaveStatusOccupied(); // Trả về List<Room>
+            var rooms = roomService.getAllRoomhaveStatus(); // Trả về List<Room>
             cbRoom.ItemsSource = rooms;
         }
 
@@ -40,7 +40,10 @@ namespace WPF
 
             if (bill != null)
             {
-                cbRoom.SelectedValue = roomService.GetRoomIdByContractId(bill.BillId);
+                if (bill.ContractId.HasValue)
+                {
+                    cbRoom.SelectedValue = roomService.GetRoomIdByContractId(bill.ContractId.Value);
+                }
                 MonthYearTextBox.Text = bill.MonthYear;
                 ElectricityOldTextBox.Text = bill.ElectricityOld.ToString();
                 ElectricityNewTextBox.Text = bill.ElectricityNew.ToString();

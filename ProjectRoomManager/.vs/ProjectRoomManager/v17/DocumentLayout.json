@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\PRN212_Project\\ProjectRoomManager\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|c:\\prn212_project\\projectroommanager\\wpf\\editbillwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|solutionrelative:wpf\\editbillwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{01843BF5-E2C7-478B-9907-FB45C4B8BB53}|Repositories\\Repositories.csproj|c:\\prn212_project\\projectroommanager\\repositories\\roomrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{01843BF5-E2C7-478B-9907-FB45C4B8BB53}|Repositories\\Repositories.csproj|solutionrelative:repositories\\roomrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{111A353B-9A12-49D7-AFF4-6B2F6ADF383B}|Services\\Services.csproj|c:\\prn212_project\\projectroommanager\\services\\roomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{111A353B-9A12-49D7-AFF4-6B2F6ADF383B}|Services\\Services.csproj|solutionrelative:services\\roomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|c:\\prn212_project\\projectroommanager\\wpf\\editbillwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|solutionrelative:wpf\\editbillwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{12CCE446-A4D8-4938-BD8E-FA3E14D60D70}|WPF\\WPF.csproj|c:\\prn212_project\\projectroommanager\\wpf\\createbillwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -214,7 +214,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 23,
+          "SelectedChildIndex": 21,
           "Children": [
             {
               "$type": "Bookmark",
@@ -354,39 +354,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "EditBillWindow.xaml.cs",
               "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\EditBillWindow.xaml.cs",
               "RelativeDocumentMoniker": "WPF\\EditBillWindow.xaml.cs",
               "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\EditBillWindow.xaml.cs",
               "RelativeToolTip": "WPF\\EditBillWindow.xaml.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAowDcAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAuwC4AAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-20T17:50:42.354Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "RoomService.cs",
               "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\Services\\RoomService.cs",
               "RelativeDocumentMoniker": "Services\\RoomService.cs",
               "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\Services\\RoomService.cs",
               "RelativeToolTip": "Services\\RoomService.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAQwEQAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBAAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-12T06:50:29.89Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "RoomRepo.cs",
               "DocumentMoniker": "C:\\PRN212_Project\\ProjectRoomManager\\Repositories\\RoomRepo.cs",
               "RelativeDocumentMoniker": "Repositories\\RoomRepo.cs",
               "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\Repositories\\RoomRepo.cs",
               "RelativeToolTip": "Repositories\\RoomRepo.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAUwFwAAABPAAAAAAAAAA==",
+              "ViewState": "AgIAAFMAAAAAAAAAAAA7wGAAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-12T05:28:21.016Z",
               "EditorCaption": ""
