@@ -17,8 +17,8 @@ jobs:
       with:
         dotnet-version: 8.0.x
     - name: Restore dependencies
-      run: dotnet restore ../ProjectRoomManager.sln
+      run: dotnet restore ProjectRoomManager/ProjectRoomManager.sln
     - name: Build
-      run: dotnet build ../ProjectRoomManager.sln --no-restore
+      run: dotnet build ProjectRoomManager/ProjectRoomManager.sln --no-restore
     - name: Test
-      run: dotnet test ../ProjectRoomManager.sln --no-build --verbosity normal
+      run: dotnet test ProjectRoomManager/ProjectRoomManager.sln --no-build --verbosity normal
