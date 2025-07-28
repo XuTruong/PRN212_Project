@@ -10,11 +10,6 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-    
-    # Set the default working directory for all steps.
-    defaults:
-      run:
-        working-directory: ProjectRoomManager
 
     steps:
     - uses: actions/checkout@v3
