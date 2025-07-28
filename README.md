@@ -1,3 +1,5 @@
+[![.NET CI](https://github.com/XuTruong/PRN212_Project/actions/workflows/dotnet-desktop.yml/badge.svg)](https://github.com/XuTruong/PRN212_Project/actions/workflows/dotnet-desktop.yml)
+
 🔧 A. Công cụ CI/CD dự kiến sử dụng
   * Công cụ chính: GitHub Actions
 
