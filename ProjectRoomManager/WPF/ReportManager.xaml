@@ -26,6 +26,7 @@
                         <ComboBoxItem Content="Báo cáo Phòng" Tag="Room"/>
                         <ComboBoxItem Content="Báo cáo Thanh toán" Tag="Payment"/>
                         <ComboBoxItem Content="Báo cáo Điện nước" Tag="Utility"/>
+                        <ComboBoxItem Content="Thống kê phòng" Tag="RoomStatistics"/>
                     </ComboBox>
                 </StackPanel>
                 

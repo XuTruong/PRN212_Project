@@ -33,6 +33,11 @@ namespace Services
             return _reportRepo.GetUtilityReport(fromDate, toDate);
         }
 
+        public List<RoomStatisticsDto> GetRoomStatisticsReport()
+        {
+            return _reportRepo.GetRoomStatisticsReport();
+        }
+
         public void ExportRevenueReportToExcel(List<RevenueReportDto> data, string filePath)
         {
             using var workbook = new XLWorkbook();

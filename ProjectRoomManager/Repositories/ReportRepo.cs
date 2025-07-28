@@ -146,5 +146,21 @@ namespace Repositories
 
             return utilityReport;
         }
+
+        public List<RoomStatisticsDto> GetRoomStatisticsReport()
+        {
+            var totalRooms = _context.Rooms.Count();
+            var rentedRooms = _context.Rooms.Count(r => r.Status == "Đang thuê");
+            var availableRooms = totalRooms - rentedRooms;
+
+            var roomStats = new List<RoomStatisticsDto>
+            {
+                new RoomStatisticsDto { Statistic = "Tổng số phòng", Value = totalRooms.ToString() },
+                new RoomStatisticsDto { Statistic = "Số phòng đang thuê", Value = rentedRooms.ToString() },
+                new RoomStatisticsDto { Statistic = "Số phòng trống", Value = availableRooms.ToString() }
+            };
+
+            return roomStats;
+        }
     }
 }

@@ -86,6 +86,9 @@ namespace WPF
                 case "Utility":
                     LoadUtilityReport(fromDate, toDate);
                     break;
+                case "RoomStatistics":
+                    LoadRoomStatisticsReport();
+                    break;
             }
         }
 
@@ -329,6 +332,27 @@ namespace WPF
             dgReport.ItemsSource = data;
         }
 
+        private void LoadRoomStatisticsReport()
+        {
+            var data = _reportService.GetRoomStatisticsReport();
+
+            // Define columns for Room Statistics Report
+            dgReport.Columns.Add(new DataGridTextColumn
+            {
+                Header = "Thống kê",
+                Binding = new Binding("Statistic"),
+                Width = new DataGridLength(200)
+            });
+            dgReport.Columns.Add(new DataGridTextColumn
+            {
+                Header = "Giá trị",
+                Binding = new Binding("Value"),
+                Width = new DataGridLength(100)
+            });
+
+            dgReport.ItemsSource = data;
+        }
+
         private void btnExport_Click(object sender, RoutedEventArgs e)
         {
             if (dgReport.ItemsSource == null)
@@ -385,6 +409,11 @@ namespace WPF
                 case "Utility":
                     var utilityData = _reportService.GetUtilityReport(fromDate, toDate);
                     _reportService.ExportUtilityReportToExcel(utilityData, filePath);
+                    break;
+                case "RoomStatistics":
+                    // Export for RoomStatistics is not implemented in this example
+                    MessageBox.Show("Chức năng xuất Excel cho loại báo cáo này chưa được hỗ trợ.", "Thông báo",
+                        MessageBoxButton.OK, MessageBoxImage.Information);
                     break;
             }
         }

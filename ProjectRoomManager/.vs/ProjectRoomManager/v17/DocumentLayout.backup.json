@@ -296,7 +296,7 @@
               "RelativeDocumentMoniker": "Repositories\\ReportRepo.cs",
               "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\Repositories\\ReportRepo.cs",
               "RelativeToolTip": "Repositories\\ReportRepo.cs",
-              "ViewState": "AgIAAH0AAAAAAAAAAAAAAI8AAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAgwIIAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-27T22:41:18.081Z",
               "EditorCaption": ""
@@ -311,8 +311,7 @@
               "RelativeToolTip": "Repositories\\DTO\\ReportDto.cs",
               "ViewState": "AgIAABoAAAAAAAAAAAA4wCQAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-27T22:40:50.002Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-27T22:40:50.002Z"
             },
             {
               "$type": "Document",
@@ -324,8 +323,7 @@
               "RelativeToolTip": "WPF\\ReportManager.xaml.cs",
               "ViewState": "AgIAAHQBAAAAAAAAAAAQwI0BAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-27T22:22:03.686Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-27T22:22:03.686Z"
             },
             {
               "$type": "Document",
@@ -336,8 +334,7 @@
               "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\CreateContract.xaml",
               "RelativeToolTip": "WPF\\CreateContract.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-20T07:36:25.012Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-20T07:36:25.012Z"
             },
             {
               "$type": "Document",
@@ -348,8 +345,7 @@
               "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\EditBillWindow.xaml",
               "RelativeToolTip": "WPF\\EditBillWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-20T17:50:24.693Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-20T17:50:24.693Z"
             },
             {
               "$type": "Document",
@@ -361,8 +357,7 @@
               "RelativeToolTip": "WPF\\MonthlyBillManager.xaml.cs",
               "ViewState": "AgIAACgAAAAAAAAAAAAwwDMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T15:34:33.83Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-20T15:34:33.83Z"
             },
             {
               "$type": "Document",
@@ -374,8 +369,7 @@
               "RelativeToolTip": "WPF\\CreateContract.xaml.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAgwBcAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T07:41:56.635Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-20T07:41:56.635Z"
             },
             {
               "$type": "Document",
@@ -387,8 +381,7 @@
               "RelativeToolTip": "WPF\\EditBillWindow.xaml.cs",
               "ViewState": "AgIAAH8AAAAAAAAAAAAkwJYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T17:50:42.354Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-20T17:50:42.354Z"
             },
             {
               "$type": "Document",
@@ -400,8 +393,7 @@
               "RelativeToolTip": "Services\\RoomService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwBAAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-12T06:50:29.89Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-12T06:50:29.89Z"
             },
             {
               "$type": "Document",
@@ -413,8 +405,7 @@
               "RelativeToolTip": "Repositories\\DTO\\PaymentItem.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-21T02:52:33.595Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-21T02:52:33.595Z"
             },
             {
               "$type": "Document",
@@ -425,8 +416,7 @@
               "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\ReportManager.xaml",
               "RelativeToolTip": "WPF\\ReportManager.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-27T22:22:00.036Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-27T22:22:00.036Z"
             },
             {
               "$type": "Document",
@@ -438,8 +428,7 @@
               "RelativeToolTip": "Repositories\\RoomRepo.cs",
               "ViewState": "AgIAAFMAAAAAAAAAAAA7wGAAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-12T05:28:21.016Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-12T05:28:21.016Z"
             },
             {
               "$type": "Document",
@@ -451,8 +440,7 @@
               "RelativeToolTip": "UnitTests\\RoomServiceTests.cs",
               "ViewState": "AgIAAFAAAAAAAAAAAAAAAGAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-22T23:47:52.114Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-22T23:47:52.114Z"
             },
             {
               "$type": "Document",
@@ -464,8 +452,7 @@
               "RelativeToolTip": "Repositories\\ContractRepo.cs",
               "ViewState": "AgIAAJ4AAAAAAAAAAAApwLEAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T04:50:04.237Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-20T04:50:04.237Z"
             },
             {
               "$type": "Document",
@@ -477,8 +464,7 @@
               "RelativeToolTip": "Services\\ContractService.cs",
               "ViewState": "AgIAABoAAAAAAAAAAIA0wCsAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T05:13:33.703Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-20T05:13:33.703Z"
             },
             {
               "$type": "Document",
@@ -490,8 +476,7 @@
               "RelativeToolTip": "WPF\\CreateBillWindow.xaml.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAmwBcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T16:04:38.265Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-20T16:04:38.265Z"
             },
             {
               "$type": "Document",
@@ -503,8 +488,7 @@
               "RelativeToolTip": "WPF\\ContractManager.xaml.cs",
               "ViewState": "AgIAADQAAAAAAAAAAAA/wDEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T04:49:10.364Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-20T04:49:10.364Z"
             },
             {
               "$type": "Document",
@@ -516,8 +500,7 @@
               "RelativeToolTip": "Repositories\\MonthlyBillRepo.cs",
               "ViewState": "AgIAAFsAAAAAAAAAAAAIwG0AAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T14:13:14.846Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-20T14:13:14.846Z"
             },
             {
               "$type": "Document",
@@ -529,8 +512,7 @@
               "RelativeToolTip": "Services\\MonthlyBillService.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAAQwCUAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T15:35:03.87Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-20T15:35:03.87Z"
             },
             {
               "$type": "Document",
@@ -542,8 +524,7 @@
               "RelativeToolTip": "WPF\\obj\\Debug\\net8.0-windows\\RoomManager_New.g.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAHAAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-27T16:44:34.362Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-27T16:44:34.362Z"
             },
             {
               "$type": "Document",
@@ -555,8 +536,7 @@
               "RelativeToolTip": "WPF\\RoomManager.xaml.cs",
               "ViewState": "AgIAAFUAAAAAAAAAAAAYwFsAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-12T06:41:17.299Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-12T06:41:17.299Z"
             },
             {
               "$type": "Document",
@@ -567,8 +547,7 @@
               "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\RoomManager.xaml",
               "RelativeToolTip": "WPF\\RoomManager.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-12T06:32:57.79Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-12T06:32:57.79Z"
             },
             {
               "$type": "Document",
@@ -580,8 +559,7 @@
               "RelativeToolTip": "WPF\\AddRoomate.xaml.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAEwBYAAABOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T10:38:22.183Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-20T10:38:22.183Z"
             },
             {
               "$type": "Document",
@@ -592,8 +570,7 @@
               "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\App.xaml",
               "RelativeToolTip": "WPF\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-12T05:50:01.489Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-12T05:50:01.489Z"
             },
             {
               "$type": "Document",
@@ -604,8 +581,7 @@
               "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\CreateBillWindow.xaml",
               "RelativeToolTip": "WPF\\CreateBillWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-20T15:56:53.455Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-20T15:56:53.455Z"
             },
             {
               "$type": "Document",
@@ -616,8 +592,7 @@
               "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\RoomManager_New.xaml",
               "RelativeToolTip": "WPF\\RoomManager_New.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-27T17:25:09.347Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-27T17:25:09.347Z"
             },
             {
               "$type": "Document",
@@ -629,8 +604,7 @@
               "RelativeToolTip": "WPF\\obj\\Debug\\net8.0-windows\\TenantManagerTest.g.cs",
               "ViewState": "AgIAADcAAAAAAAAAAAAAwEkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-27T16:44:50.097Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-27T16:44:50.097Z"
             },
             {
               "$type": "Document",
@@ -664,8 +638,7 @@
               "RelativeToolTip": "Services\\TenantService.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-12T12:32:47.058Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-12T12:32:47.058Z"
             },
             {
               "$type": "Document",
@@ -677,8 +650,7 @@
               "RelativeToolTip": "WPF\\TenantManager.xaml.cs",
               "ViewState": "AgIAAB0AAAAAAAAAAAAgwDIAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-24T02:11:52.822Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-24T02:11:52.822Z"
             },
             {
               "$type": "Document",
@@ -735,8 +707,7 @@
               "ToolTip": "C:\\PRN212_Project\\ProjectRoomManager\\WPF\\ContractManager.xaml",
               "RelativeToolTip": "WPF\\ContractManager.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-20T04:48:46.612Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-20T04:48:46.612Z"
             },
             {
               "$type": "Document",
